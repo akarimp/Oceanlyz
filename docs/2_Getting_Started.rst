@@ -3,9 +3,9 @@ Getting Started
 
 In order to use OCEANLYZ toolbox, first, one of the MATLAB or GNU Octave programming language should be installed with required packages (Refer to required packages for MATLAB/GNU Octave). 
 
-Then, the OCEANLYZ toolbox should be downloaded and unzip in a folder of your choice. For example, if the OCEANLYZ is unzipped on C: derive, then OCEANLYZ folder would be “C:\oceanlyz” on a windows machine.
+Then, the OCEANLYZ toolbox should be downloaded and unzip in a folder of your choice. For example, if the OCEANLYZ is unzipped on C: derive, then OCEANLYZ folder would be “C:\\oceanlyz” on a windows machine.
 
-Before using the Oceanlyz, these steps should be followed first:
+Before using the OCEANLYZ, these steps should be followed first:
 
 1. Setting values representing the properties of the dataset needs to be analyzed
 2. Defining what type of analysis is required to be done
@@ -20,7 +20,7 @@ Set up Input, Output, and Calculation parameters
 Values that define input, output, and calculation parameters are defined in a file named “oceanlyzinput.m”. To set up these parameters, first, open file “oceanlyzinput.m” by following these steps:
 
 * Open MATLAB or GNU Octave
-* Change a current folder (current directory) to a folder that contains OCEANLYZ toolbox in MATLAB or GNU Octave. For example, open “C:\oceanlyz” directory.
+* Change a current folder (current directory) to a folder that contains OCEANLYZ toolbox in MATLAB or GNU Octave. For example, open “C:\\oceanlyz” directory.
 * Open a file named “oceanlyzinput.m” in MATLAB or GNU Octave editor and modify it based on the properties of the collected dataset and required analysis. 
 
 Parameters that can be defined in “oceanlyzinput.m” are described in following.
@@ -282,7 +282,7 @@ All parameters mentioned in a previous section might be required for the spectra
 Required Parameters for Zero-Crossing Method
 --------------------------------------------
 
-Not all parameters mentioned in previous section are required for the zero-crossing method. If AnalysisMethod= 'zerocross'; then only following parameters are required. All other parameters, if defined, are ignored by Oceanlyz.
+Not all parameters mentioned in previous section are required for the zero-crossing method. If AnalysisMethod= 'zerocross'; then only following parameters are required. All other parameters, if defined, are ignored by OCEANLYZ.
 
 .. code:: MATLAB
 
@@ -342,7 +342,7 @@ To run OCEANLYZ follow these steps:
 
 
 * Open MATLAB or GNU Octave.
-* Change a current folder (current directory) to a folder that contains OCEANLYZ toolbox inside MATLAB or GNU Octave. For example, open “C:\oceanlyz” directory.
+* Change a current folder (current directory) to a folder that contains OCEANLYZ toolbox inside MATLAB or GNU Octave. For example, open “C:\\oceanlyz” directory.
 * Run a file named “RunOceanlyz.m” in MATLAB or GNU Octave to start calculations. 
 
 
