@@ -35,7 +35,7 @@ OCEANLYZ, Ocean Wave Analyzing Toolbox, is a toolbox for analyzing the wave time
     6_Apply_Diagnostic_Tail.rst
     7_References.rst
 
-Oceanlyz functions can be used as a standalone command in Matlab/GNU Octave command line or it can be embedded in Matalb/GNU Octave script file (.m file). Here are main Oceanlyz functions:
+OCEANLYZ functions can be used as a standalone command in Matlab/GNU Octave command line or it can be embedded in Matalb/GNU Octave script file (.m file). Here are main Oceanlyz functions:
 
 .. toctree::
     :maxdepth: 1
@@ -46,6 +46,13 @@ Oceanlyz functions can be used as a standalone command in Matlab/GNU Octave comm
     11_PcorFFTFun.rst
     12_PcorZerocrossingFun.rst
     13_SeaSwellFun.rst
+
+OCEANLYZ changelog
+
+.. toctree::
+    :maxdepth: 1
+
+    14_Changelog.rst
 
 Recommended Book
 ----------------
@@ -60,10 +67,10 @@ Book link: https://www.amazon.com/dp/0692109978
 
     Figure: Ocean Wave Data Analysis
 
-Indices and tables
+Search
 ==================
 
-* :ref:`genindex`
 * :ref:`search`
 
+.. * :ref:`genindex`
 .. * :ref:`modindex`
