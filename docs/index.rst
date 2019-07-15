@@ -12,11 +12,12 @@ OCEANLYZ, Ocean Wave Analyzing Toolbox
 
 MATLAB / GNU Octave Toolbox
 
+:Author: Arash Karimpour
+:Website: http://www.arashkarimpour.com
+:Download: http://www.arashkarimpour.com/oceanlyz.html
+:Documentation: https://oceanlyz.readthedocs.io
+:Source code: https://github.com/akarimp/oceanlyz
 :Version: 1.4
-:Author: Arash Karimpour (http://www.arashkarimpour.com)
-:Download: http://www.arashkarimpour.com
-:Document: https://oceanlyz.readthedocs.io
-:GitHub: https://github.com/akarimp/oceanlyz
 
 .. :Date: July, 2019
 
