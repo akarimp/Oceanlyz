@@ -1,15 +1,15 @@
 Getting Started
 ===============
 
-In order to use Oceanlyz toolbox, first, one of the MATLAB or GNU Octave programming language should be installed with required packages (Refer to required packages for MATLAB/GNU Octave). 
+In order to use OCEANLYZ toolbox, first, one of the MATLAB or GNU Octave programming language should be installed with required packages (Refer to required packages for MATLAB/GNU Octave). 
 
-Then, the Oceanlyz toolbox should be downloaded and unzip in a folder of your choice. For example, if the Oceanlyz is unzipped on C: derive, then Oceanlyz folder would be “C:\oceanlyz” on a windows machine.
+Then, the OCEANLYZ toolbox should be downloaded and unzip in a folder of your choice. For example, if the OCEANLYZ is unzipped on C: derive, then OCEANLYZ folder would be “C:\oceanlyz” on a windows machine.
 
 Before using the Oceanlyz, these steps should be followed first:
 
 1. Setting values representing the properties of the dataset needs to be analyzed
 2. Defining what type of analysis is required to be done
-3. Preparing dataset in a format that the Oceanlyz can use
+3. Preparing dataset in a format that the OCEANLYZ can use
 
 These steps are explained in detail in following sections. 
 
@@ -277,7 +277,7 @@ Input, Output, and Calculation Parameters
 Required Parameters for Spectral Analysis
 -----------------------------------------
 
-All parameters mentioned in a previous section might be required for the spectral analysis (depending on which module is on or off). In other words, if AnalysisMethod='spectral'; then all mentioned parameters above might be required. If a parameter is not required, it is ignored by Oceanlyz if defined.
+All parameters mentioned in a previous section might be required for the spectral analysis (depending on which module is on or off). In other words, if AnalysisMethod='spectral'; then all mentioned parameters above might be required. If a parameter is not required, it is ignored by OCEANLYZ if defined.
 
 Required Parameters for Zero-Crossing Method
 --------------------------------------------
@@ -335,10 +335,10 @@ Default values are set as follow:
     dispout='off';
 
 
-Run Oceanlyz
+Run OCEANLYZ
 ------------
 
-To run Oceanlyz follow these steps:
+To run OCEANLYZ follow these steps:
 
 
 * Open MATLAB or GNU Octave.
