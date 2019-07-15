@@ -9,7 +9,7 @@ This toolbox contains functions that each one is suitable for a particular purpo
 Download
 --------
 
-To download Oceanlyz, visit http://www.arashkarimpour.com
+To download OCEANLYZ, visit http://www.arashkarimpour.com
 
 
 Installation
@@ -33,13 +33,13 @@ This toolbox can be run by using MATLAB (https://www.mathworks.com) or GNU Octav
 Required Package for MATLAB
 ---------------------------
 
-MATLAB users need to install MATLAB Signal Processing Toolbox for running the Oceanlyz spectral analysis. It gives Oceanlyz access to MATLAB Welch's power spectral density calculation. However, MATLAB Signal Processing Toolbox it is not required for zero-crossing analysis. 
+MATLAB users need to install MATLAB Signal Processing Toolbox for running the OCEANLYZ spectral analysis. It gives OCEANLYZ access to MATLAB Welch's power spectral density calculation. However, MATLAB Signal Processing Toolbox it is not required for zero-crossing analysis. 
 
 
 Required Package for GNU Octave
 -------------------------------
 
-GNU Octave users need to install/load GNU Octave Signal Package for running the Oceanlyz spectral analysis. It gives Oceanlyz access to GNU Octave Welch's power spectral density calculation. However, GNU Octave Signal Package it is not required for zero-crossing analysis.
+GNU Octave users need to install/load GNU Octave Signal Package for running the OCEANLYZ spectral analysis. It gives OCEANLYZ access to GNU Octave Welch's power spectral density calculation. However, GNU Octave Signal Package it is not required for zero-crossing analysis.
 
 GNU Octave Signal Package can be loaded inside GNU Octave by using a following command in a command window (This should be done every time GNU Octave is opened):
 
