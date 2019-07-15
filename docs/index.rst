@@ -17,6 +17,7 @@ MATLAB / GNU Octave Toolbox
 :Download: http://www.arashkarimpour.com/oceanlyz.html
 :Documentation: https://oceanlyz.readthedocs.io
 :Source code: https://github.com/akarimp/oceanlyz
+:Report issues: https://github.com/akarimp/oceanlyz/issues
 :Version: 1.4
 
 .. :Date: July, 2019
