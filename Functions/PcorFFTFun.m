@@ -3,11 +3,11 @@ function [Eta,ftailcorrection]=PcorFFTFun(input,fs,duration,nfft,h,heightfrombed
 %.. +                                                                        +
 %.. + Oceanlyz                                                               +
 %.. + Ocean Wave Analyzing Toolbox                                           +
-%.. + Ver 1.4                                                                +
+%.. + Ver 1.5                                                                +
 %.. +                                                                        +
 %.. + Developed by: Arash Karimpour                                          +
 %.. + Contact     : www.arashkarimpour.com                                   +
-%.. + Developed/Updated (yyyy-mm-dd): 2019-07-01                             +
+%.. + Developed/Updated (yyyy-mm-dd): 2020-07-01                             +
 %.. +                                                                        +
 %.. ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 %  
@@ -112,7 +112,11 @@ w=2*pi*f; %Angular frequency
 
 %calculating Fast Fourier transform
 FFTEta = fft(input1,len);
-Syy=(2/fs)*FFTEta.*conj(FFTEta)/len;
+%Syy=abs((2/fs)*FFTEta.*conj(FFTEta)/len);
+%Syy(f>fs/2)=0;
+Syy=zeros(len,1);
+[Syy_half,f1]=pwelch(input1,[],[],len,fs);
+Syy(1:length(Syy_half(:,1)),1)=Syy_half;
 
 %Estimation of wave number (k) from Hunt (1979)
 %k0=w.^2/9.81; %Deep water wave number
