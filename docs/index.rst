@@ -1,12 +1,12 @@
 .. YA LATIF
 
 .. OCEANLYZ documentation master file, created by
-   sphinx-quickstart on Thu Jul 11 17:21:15 2019.
+   sphinx-quickstart on Wed Aug  5 14:01:23 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-OCEANLYZ Document
-=================
+Welcome to OCEANLYZ's documentation!
+====================================
 
 OCEANLYZ, Ocean Wave Analyzing Toolbox
 
@@ -16,11 +16,12 @@ MATLAB / GNU Octave Toolbox
 :Website: http://www.arashkarimpour.com
 :Download: http://www.arashkarimpour.com/oceanlyz.html
 :Documentation: https://oceanlyz.readthedocs.io
+:Tutorial Videos: https://www.youtube.com/playlist?list=PLcrFHi9M_GZRTCshcgujlK7y5ZPim6afM
 :Source code: https://github.com/akarimp/oceanlyz
 :Report issues: https://github.com/akarimp/oceanlyz/issues
-:Version: 1.4
+:Version: 1.5
 
-.. :Date: July, 2019
+.. :Date: July, 2020
 
 |
 
@@ -35,26 +36,25 @@ OCEANLYZ, Ocean Wave Analyzing Toolbox, is a toolbox for analyzing the wave time
     4_Sample_Files.rst
     5_Apply_Pressure_Response_Factor.rst
     6_Apply_Diagnostic_Tail.rst
-    7_References.rst
 
 OCEANLYZ functions can be used as a standalone command in Matlab/GNU Octave command line or it can be embedded in Matalb/GNU Octave script file (.m file). Here are main OCEANLYZ functions:
 
 .. toctree::
     :maxdepth: 1
 
-    8_Functions.rst
-    9_WaveSpectraFun.rst
-    10_WaveZerocrossingFun.rst
-    11_PcorFFTFun.rst
-    12_PcorZerocrossingFun.rst
-    13_SeaSwellFun.rst
+    7_Functions.rst
+    8_WaveSpectraFun.rst
+    9_WaveZerocrossingFun.rst
+    10_PcorFFTFun.rst
+    11_PcorZerocrossingFun.rst
+    12_SeaSwellFun.rst
 
 OCEANLYZ changelog
 
 .. toctree::
     :maxdepth: 1
 
-    14_Changelog.rst
+    13_Changelog.rst
 
 Recommended Book
 ----------------
@@ -69,10 +69,9 @@ Book link: https://www.amazon.com/dp/0692109978
 
     Figure: Ocean Wave Data Analysis
 
-Search
-==================
-
-* :ref:`search`
+.. Indices and tables
+.. ==================
 
 .. * :ref:`genindex`
 .. * :ref:`modindex`
+.. * :ref:`search`
