@@ -11,9 +11,10 @@ MATLAB / GNU Octave Toolbox
 :Website: http://www.arashkarimpour.com
 :Download: http://www.arashkarimpour.com/oceanlyz.html
 :Documentation: https://oceanlyz.readthedocs.io
+:Tutorial Videos: https://www.youtube.com/playlist?list=PLcrFHi9M_GZRTCshcgujlK7y5ZPim6afM
 :Source code: https://github.com/akarimp/oceanlyz
 :Report issues: https://github.com/akarimp/oceanlyz/issues
-:Version: 1.4
+:Version: 1.5
 
 OCEANLYZ, Ocean Wave Analyzing Toolbox, is a toolbox for analyzing the wave time series data collected by sensors in open body of water such as ocean, sea, and lake or in a laboratory.
 
@@ -100,7 +101,7 @@ Karimpour, A., & Chen, Q. (2017). Wind Wave Analysis in Depth Limited Water Usin
 License Agreement and Disclaimer
 --------------------------------
 
-Copyright (c) 2018 Arash Karimpour
+Copyright (c) 2020 Arash Karimpour
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
