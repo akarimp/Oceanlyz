@@ -2,11 +2,11 @@
 %.. +                                                                        +
 %.. + Oceanlyz                                                               +
 %.. + Ocean Wave Analyzing Toolbox                                           +
-%.. + Ver 1.4                                                                +
+%.. + Ver 1.5                                                                +
 %.. +                                                                        +
 %.. + Developed by: Arash Karimpour                                          +
 %.. + Contact     : www.arashkarimpour.com                                   +
-%.. + Developed/Updated (yyyy-mm-dd): 2019-07-01                             +
+%.. + Developed/Updated (yyyy-mm-dd): 2020-07-01                             +
 %.. +                                                                        +
 %.. ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 %
@@ -20,7 +20,7 @@
 %
 %.. LICENSE & DISCLAIMER
 %.. -------------------- 
-%.. Copyright (c) 2018 Arash Karimpour
+%.. Copyright (c) 2020 Arash Karimpour
 %..
 %.. http://www.arashkarimpour.com
 %..
@@ -87,15 +87,15 @@ WaveParameterCalc='on';
 
 %--------------------
 %Measurement properties
-burst=5;
+n_burst=5;
 %                                 :Number of burst(s) in the input file
-%                                 :    burst=total number of data points/(duration*fs)
+%                                 :    n_burst=total number of data points/(burst_duration*fs)
 %                                 :    Example: 
 %                                 :    For 12 bursts of data, which each burst has a duration of 30 minutes, and collected at sampling frequency of 10 Hz 
-%                                 :    duration=(30*60)
-%                                 :    total number of data points=number of burst*duration of each burst*sampling frequency
+%                                 :    burst_duration=(30*60)
+%                                 :    total number of data points=number of burst*burst_duration of each burst*sampling frequency
 %                                 :    total number of data points=12*(30*60)*10
-duration=1024;
+burst_duration=1024;
 %                                 :Duration time that data collected in each burst in (second)
 fs=10;
 %                                 :Sampling frequency that data are collected at in (Hz)
