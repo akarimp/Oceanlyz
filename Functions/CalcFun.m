@@ -3,11 +3,11 @@ function [wave]=CalcFun(OceanlyzInputFileName,OceanlyzFolder,OceanlyzPath)
 %.. +                                                                        +
 %.. + Oceanlyz                                                               +
 %.. + Ocean Wave Analyzing Toolbox                                           +
-%.. + Ver 1.4                                                                +
+%.. + Ver 1.5                                                                +
 %.. +                                                                        +
 %.. + Developed by: Arash Karimpour                                          +
 %.. + Contact     : www.arashkarimpour.com                                   +
-%.. + Developed/Updated (yyyy-mm-dd): 2019-07-01                             +
+%.. + Developed/Updated (yyyy-mm-dd): 2020-07-01                             +
 %.. +                                                                        +
 %.. ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 %  
@@ -72,7 +72,7 @@ function [wave]=CalcFun(OceanlyzInputFileName,OceanlyzFolder,OceanlyzPath)
 CurrentDate=clock;
 clc;
 disp('--------------------------------------------------')
-disp('OCEANLYZ Ver 1.4')
+disp('OCEANLYZ Ver 1.5')
 disp('www.ArashKarimpour.com')
 %disp('Copyright (C) 2018 Arash Karimpour')
 disp(['Copyright (C) 2012-',num2str(CurrentDate(1)),' Arash Karimpour'])
@@ -89,7 +89,7 @@ ReadMethod='fgetl'; %Reading method
     InputFileName,InputFileFolder,...
     SaveOutput,OutputFileFolder,...
     AnalysisMethod,WaveParameterCalc,seaswellCalc,...
-    burst,duration,nfft,fs,heightfrombed,...
+    n_burst,burst_duration,nfft,fs,heightfrombed,...
     fmin,fmax,fminpcorr,fmaxpcorr,ftailcorrection,tailpower,fminswell,fmaxswell,...
     pressureattenuation,autofmaxpcorr,mincutoff,maxcutoff,tailcorrection,dispout...
     ]...
@@ -238,7 +238,7 @@ disp('Calculating wave properties')
     (...
     InputFileName,InputFileFolder,...
     module,...
-    burst,duration,nfft,fs,heightfrombed,...
+    n_burst,burst_duration,nfft,fs,heightfrombed,...
     fmin,fmax,fminpcorr,fmaxpcorr,ftailcorrection,tailpower,fminswell,fmaxswell,...
     pressureattenuation,autofmaxpcorr,mincutoff,maxcutoff,tailcorrection,dispout...
     );
@@ -248,7 +248,8 @@ disp('--------------------------------------------------')
 disp('Output array is a structure array named "wave"')
 disp('Field(s) in a structure array "wave" can be called by using "."')
 disp('Example: Output for a peak wave period is : "wave.Tp"')
-disp('Output fields are')
+disp('Field names may be obtained from fieldnames(wave) command')
+disp('Output field names are')
 fieldnames(wave)
 disp('--------------------------------------------------')
 

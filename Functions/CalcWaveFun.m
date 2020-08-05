@@ -3,7 +3,7 @@ function [wave]...
     (...
     InputFileName,InputFileFolder,...
     module,...
-    burst,duration,nfft,fs,heightfrombed,...
+    n_burst,burst_duration,nfft,fs,heightfrombed,...
     fmin,fmax,fminpcorr,fmaxpcorr,ftailcorrection,tailpower,fminswell,fmaxswell,...
     pressureattenuation,autofmaxpcorr,mincutoff,maxcutoff,tailcorrection,dispout...
     )
@@ -11,11 +11,11 @@ function [wave]...
 %.. +                                                                        +
 %.. + Oceanlyz                                                               +
 %.. + Ocean Wave Analyzing Toolbox                                           +
-%.. + Ver 1.4                                                                +
+%.. + Ver 1.5                                                                +
 %.. +                                                                        +
 %.. + Developed by: Arash Karimpour                                          +
 %.. + Contact     : www.arashkarimpour.com                                   +
-%.. + Developed/Updated (yyyy-mm-dd): 2019-07-01                             +
+%.. + Developed/Updated (yyyy-mm-dd): 2020-07-01                             +
 %.. +                                                                        +
 %.. ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 %  
@@ -29,7 +29,7 @@ function [wave]...
 %    (...
 %    InputFileName,InputFileFolder,...
 %    module,...
-%    burst,duration,nfft,fs,heightfrombed,...
+%    n_burst,burst_duration,nfft,fs,heightfrombed,...
 %    fmin,fmax,fminpcorr,fmaxpcorr,ftailcorrection,tailpower,fminswell,fmaxswell,...
 %    pressureattenuation,autofmaxpcorr,mincutoff,maxcutoff,tailcorrection,dispout...
 %    )
@@ -123,7 +123,7 @@ end
 
 %--------------------------------------------------------------------------
 
-sample=fs*duration; %number of sample in 1 burst
+sample=fs*burst_duration; %number of sample in 1 burst
 fmaxpcorr1=fmaxpcorr; %storing user defined fmaxpcorr
 
 %define if pressure attenuation factor applied or not
@@ -142,7 +142,7 @@ end
 
 cd(currentpath);
 
-for i=1:burst
+for i=1:n_burst
     
     if strcmp(dispout,'on')==1
         Step=['Burst = ',num2str(i)];
@@ -162,36 +162,36 @@ for i=1:burst
 	
     %calling function
     if module==1
-        [wave.Hm0(i,1),wave.Tm01(i,1),wave.Tm02(i,1),wave.Tp(i,1),wave.fp(i,1),wave.f(i,:),wave.Syy(i,:)]=WaveSpectraFun(input,fs,duration,nfft,h,heightfrombed,fmin,fmax,ftailcorrection,tailpower,mincutoff,maxcutoff,tailcorrection,dispout);
+        [wave.Hm0(i,1),wave.Tm01(i,1),wave.Tm02(i,1),wave.Tp(i,1),wave.fp(i,1),wave.f(i,:),wave.Syy(i,:)]=WaveSpectraFun(input,fs,burst_duration,nfft,h,heightfrombed,fmin,fmax,ftailcorrection,tailpower,mincutoff,maxcutoff,tailcorrection,dispout);
     
     elseif module==2
-        [wave.Hs(i,1),wave.Hz(i,1),wave.Tz(i,1),wave.Ts(i,1)]=WaveZerocrossingFun(input,fs,duration,'off');
+        [wave.Hs(i,1),wave.Hz(i,1),wave.Tz(i,1),wave.Ts(i,1)]=WaveZerocrossingFun(input,fs,burst_duration,'off');
     
     elseif module==3
-        [wave.Eta(i,:),ftailcorrection]=PcorFFTFun(input,fs,duration,nfft,h,heightfrombed,fminpcorr,fmaxpcorr,ftailcorrection,pressureattenuation,autofmaxpcorr,'off');
+        [wave.Eta(i,:),ftailcorrection]=PcorFFTFun(input,fs,burst_duration,nfft,h,heightfrombed,fminpcorr,fmaxpcorr,ftailcorrection,pressureattenuation,autofmaxpcorr,'off');
     
     elseif module==4
-        [wave.Eta(i,:)]=PcorZerocrossingFun(input,fs,duration,h,heightfrombed,'off');
+        [wave.Eta(i,:)]=PcorZerocrossingFun(input,fs,burst_duration,h,heightfrombed,'off');
     
     elseif module==5
-        [wave.Hm0(i,1),wave.Hm0sea(i,1),wave.Hm0swell(i,1),wave.Tp(i,1),wave.Tpsea(i,1),wave.Tpswell(i,1),wave.fp(i,1),wave.fseparation(i,1),wave.f(i,:),wave.Syy(i,:)]=SeaSwellFun(input,fs,duration,nfft,h,fmin,fmax,ftailcorrection,tailpower,fminswell,fmaxswell,mincutoff,maxcutoff,tailcorrection,dispout);
+        [wave.Hm0(i,1),wave.Hm0sea(i,1),wave.Hm0swell(i,1),wave.Tp(i,1),wave.Tpsea(i,1),wave.Tpswell(i,1),wave.fp(i,1),wave.fseparation(i,1),wave.f(i,:),wave.Syy(i,:)]=SeaSwellFun(input,fs,burst_duration,nfft,h,fmin,fmax,ftailcorrection,tailpower,fminswell,fmaxswell,mincutoff,maxcutoff,tailcorrection,dispout);
     
     elseif module==6
-       [wave.Eta(i,:),ftailcorrection]=PcorFFTFun(input,fs,duration,nfft,h,heightfrombed,fminpcorr,fmaxpcorr,ftailcorrection,pressureattenuation,autofmaxpcorr,'off'); 
-       [wave.Hm0(i,1),wave.Tm01(i,1),wave.Tm02(i,1),wave.Tp(i,1),wave.fp(i,1),wave.f(i,:),wave.Syy(i,:)]=WaveSpectraFun((wave.Eta(i,:))',fs,duration,nfft,h,heightfrombed,fmin,fmax,ftailcorrection,tailpower,mincutoff,maxcutoff,tailcorrection,dispout);
+       [wave.Eta(i,:),ftailcorrection]=PcorFFTFun(input,fs,burst_duration,nfft,h,heightfrombed,fminpcorr,fmaxpcorr,ftailcorrection,pressureattenuation,autofmaxpcorr,'off'); 
+       [wave.Hm0(i,1),wave.Tm01(i,1),wave.Tm02(i,1),wave.Tp(i,1),wave.fp(i,1),wave.f(i,:),wave.Syy(i,:)]=WaveSpectraFun((wave.Eta(i,:))',fs,burst_duration,nfft,h,heightfrombed,fmin,fmax,ftailcorrection,tailpower,mincutoff,maxcutoff,tailcorrection,dispout);
     
     elseif module==7
-        [wave.Eta(i,:)]=PcorZerocrossingFun(input,fs,duration,h,heightfrombed,'off');
-        [wave.Hs(i,1),wave.Hz(i,1),wave.Tz(i,1),wave.Ts(i,1)]=WaveZerocrossingFun((wave.Eta(i,:))',fs,duration,'off');
+        [wave.Eta(i,:)]=PcorZerocrossingFun(input,fs,burst_duration,h,heightfrombed,'off');
+        [wave.Hs(i,1),wave.Hz(i,1),wave.Tz(i,1),wave.Ts(i,1)]=WaveZerocrossingFun((wave.Eta(i,:))',fs,burst_duration,'off');
     
     elseif module==8
-        [wave.Eta(i,:),ftailcorrection]=PcorFFTFun(input,fs,duration,nfft,h,heightfrombed,fminpcorr,fmaxpcorr,ftailcorrection,pressureattenuation,autofmaxpcorr,'off');
-        [wave.Hm0(i,1),wave.Hm0sea(i,1),wave.Hm0swell(i,1),wave.Tp(i,1),wave.Tpsea(i,1),wave.Tpswell(i,1),wave.fp(i,1),wave.fseparation(i,1),wave.f(i,:),wave.Syy(i,:)]=SeaSwellFun((wave.Eta(i,:))',fs,duration,nfft,h,fmin,fmax,ftailcorrection,tailpower,fminswell,fmaxswell,mincutoff,maxcutoff,tailcorrection,dispout);
+        [wave.Eta(i,:),ftailcorrection]=PcorFFTFun(input,fs,burst_duration,nfft,h,heightfrombed,fminpcorr,fmaxpcorr,ftailcorrection,pressureattenuation,autofmaxpcorr,'off');
+        [wave.Hm0(i,1),wave.Hm0sea(i,1),wave.Hm0swell(i,1),wave.Tp(i,1),wave.Tpsea(i,1),wave.Tpswell(i,1),wave.fp(i,1),wave.fseparation(i,1),wave.f(i,:),wave.Syy(i,:)]=SeaSwellFun((wave.Eta(i,:))',fs,burst_duration,nfft,h,fmin,fmax,ftailcorrection,tailpower,fminswell,fmaxswell,mincutoff,maxcutoff,tailcorrection,dispout);
     end
     
     if strcmp(dispout,'on')==1
-        wb=waitbar(i/burst);
-        waitbar(i/burst,wb,sprintf('Percentage = %0.2f',i/burst*100))
+        wb=waitbar(i/n_burst);
+        waitbar(i/n_burst,wb,sprintf('Percentage = %0.2f',i/n_burst*100))
     end
 
 end

@@ -3,11 +3,11 @@ function [Hs,Hz,Tz,Ts,H,T]=WaveZerocrossingFun(input,fs,duration,dispout)
 %.. +                                                                        +
 %.. + Oceanlyz                                                               +
 %.. + Ocean Wave Analyzing Toolbox                                           +
-%.. + Ver 1.4                                                                +
+%.. + Ver 1.5                                                                +
 %.. +                                                                        +
 %.. + Developed by: Arash Karimpour                                          +
 %.. + Contact     : www.arashkarimpour.com                                   +
-%.. + Developed/Updated (yyyy-mm-dd): 2019-07-01                             +
+%.. + Developed/Updated (yyyy-mm-dd): 2020-07-01                             +
 %.. +                                                                        +
 %.. ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 %
