@@ -26,7 +26,7 @@ To use MATLAB version of OCEANLYZ toolbox:
 * Install MATLAB or GNU Octave
 * Download OCEANLYZ:
 
-    | GitHub: https://github.com/akarimp/oceanlyz/releases 
+    | GitHub: https://github.com/akarimp/oceanlyz/releases/download/2.0/oceanlyz_2_0.zip 
     | CNET: https://download.cnet.com/Oceanlyz/3000-2054_4-75833686.html
 
 * Unzip OCEANLYZ in any location you choose such as “C:\\”
