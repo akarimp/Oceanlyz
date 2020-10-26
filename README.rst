@@ -3,34 +3,67 @@
 OCEANLYZ
 ========
 
-OCEANLYZ, Ocean Wave Analyzing Toolbox
-
-MATLAB / GNU Octave Toolbox
-
-:Developer: Arash Karimpour
-:Website: http://www.arashkarimpour.com
-:Download: http://www.arashkarimpour.com/oceanlyz.html
-:Documentation: https://oceanlyz.readthedocs.io
-:Tutorial Videos: https://www.youtube.com/playlist?list=PLcrFHi9M_GZRTCshcgujlK7y5ZPim6afM
-:Source code: https://github.com/akarimp/oceanlyz
-:Report issues: https://github.com/akarimp/oceanlyz/issues
-:Version: 1.5
-
 OCEANLYZ, Ocean Wave Analyzing Toolbox, is a toolbox for analyzing the wave time series data collected by sensors in open body of water such as ocean, sea, and lake or in a laboratory.
 
 This toolbox contains functions that each one is suitable for a particular purpose. Both spectral and zero-crossing methods are offered for wave analysis. This toolbox can calculate wave properties such as zero-moment wave height, significant wave height, mean wave height, peak wave period and mean period. This toolbox can correct and account for the pressure attention (pressure loss) in the water column for data collected by a pressure sensor. This toolbox can separate wind sea and swell energies and reports their properties.
 
+:Name: OCEANLYZ
+:Description: Ocean Wave Analyzing Toolbox
+:Version: 2.0
+:Requirements: MATLAB, or GNU Octave, or Python (3 or later)
+:Developer: Arash Karimpour (http://www.arashkarimpour.com)
+:Documentation: https://oceanlyz.readthedocs.io
+:Tutorial Video: `YouTube Playlist <https://www.youtube.com/playlist?list=PLcrFHi9M_GZRTCshcgujlK7y5ZPim6afM>`_
+:Source Code: https://github.com/akarimp/oceanlyz
+:Report Issues: https://github.com/akarimp/oceanlyz/issues
 
-Download
---------
 
-To download Oceanlyz, visit http://www.arashkarimpour.com
+Installation (MATLAB Version)
+-----------------------------
+
+To use MATLAB version of OCEANLYZ toolbox:
+
+* Install MATLAB or GNU Octave
+* Download OCEANLYZ:
+
+    | GitHub: https://github.com/akarimp/oceanlyz/releases 
+    | CNET: https://download.cnet.com/Oceanlyz/3000-2054_4-75833686.html
+
+* Unzip OCEANLYZ in any location you choose such as “C:\\”
 
 
-Installation
-------------
+Installation (Python Version)
+-----------------------------
 
-To use this toolbox, download and unzip it in any location you choose such as “C:\\”.
+To use Python version of OCEANLYZ toolbox:
+
+* Install Python
+* Install ScientiMate (Python version of OCEANLYZ toolbox is part of ScintiMate package)
+
+**1) Install Python**
+
+First, we need to install Python programming language.
+
+* Method 1:
+    Install pure Python from https://www.python.org and then use the **pip** command to install required packages
+* Method 2 (Recommended):
+    Install Anaconda Python distribution from https://www.anaconda.com and then use the **conda** command to install required packages
+
+**2) Install ScientiMate**
+
+After Python is installed, we need to install ScientiMate package.
+
+To install ScientiMate via pip (https://pypi.org/project/scientimate):
+
+.. code:: python
+
+    pip install scientimate
+
+To install ScientiMate via Anaconda cloud (https://anaconda.org/akarimp/scientimate):
+
+.. code:: python
+
+     conda install -c akarimp scientimate
 
 
 Operating System
@@ -42,7 +75,7 @@ This code can be run on Windows, Mac and Linux. However, make sure any given pat
 Required Programing Language
 ----------------------------
 
-This toolbox can be run by using MATLAB (https://www.mathworks.com) or GNU Octave (https://www.gnu.org/software/octave). 
+This toolbox can be run by using MATLAB (https://www.mathworks.com), GNU Octave (https://www.gnu.org/software/octave), or Python (https://www.python.org). 
 
 
 Required Package for MATLAB
@@ -72,24 +105,48 @@ If GNU Octave Signal Package is not already installed, it should be first instal
     >> pkg load signal
 
 
-Quick Start
------------
+Required Package for Python
+---------------------------
+
+Following packages are required:
+
+* NumPy (https://numpy.org)
+* SciPy (https://www.scipy.org)
+* Matplotlib (https://matplotlib.org)
+
+
+Quick Start (MATLAB Version)
+----------------------------
 
 * Open MATLAB or GNU Octave
 * Change a current folder (current directory) to a folder that contains OCEANLYZ toolbox, for example “C:\\oceanlyz”, in MATLAB or GNU Octave.
 * Open a file named “oceanlyzinput.m” in MATLAB or GNU Octave editor and modify it based on the properties of the collected dataset and required analysis.
 * Run a file named “RunOceanlyz.m” in MATLAB or GNU Octave to start calculations.
 
-For more information, refer to “Tutorial” section.
+
+Quick Start (Python Version)
+----------------------------
+
+* Open Python
+* Import ScientiMate package by using "import scientimate as sm" 
+* Create OCEANLYZ object such as “ocn=sm.oceanlyz()” in Python and set/modify its properties based on the dataset and required analysis.
+* Run a method as “ocn.runoceanlyz()” in Python to start calculations.
+
 
 Recommended Book
 ----------------
 
-For more details on coastal and ocean wave data analysis refer to:
-
-Karimpour A., (2018), Ocean Wave Data Analysis: Introduction to Time Series Analysis, Signal Processing, and Wave Prediction, KDP.
-
-Book link: https://www.amazon.com/dp/0692109978
+* | **Ocean Wave Data Analysis**
+  | Introduction to Time Series Analysis, Signal Processing, and Wave Prediction.
+  | Order at Amazon: https://www.amazon.com/dp/0692109978
+  |
+* | **Principles of Data Science with Python**
+  | Introduction to Scientific Computing, Data Analysis, and Data Visualization.
+  | Order at Amazon: https://www.amazon.com/dp/1735241008
+  |
+* | **Fundamentals of Data Science with MATLAB**
+  | Introduction to Scientific Computing, Data Analysis, and Data Visualization.
+  | Order at Amazon: https://www.amazon.com/dp/1735241016
 
 Citation
 --------
@@ -98,8 +155,11 @@ Cite this toolbox as:
 
 Karimpour, A., & Chen, Q. (2017). Wind Wave Analysis in Depth Limited Water Using OCEANLYZ, a MATLAB toolbox. Computers & Geosciences.
 
+
 License Agreement and Disclaimer
 --------------------------------
+
+OCEANLYZ: Ocean Wave Analyzing Toolbox
 
 Copyright (c) 2020 Arash Karimpour
 
