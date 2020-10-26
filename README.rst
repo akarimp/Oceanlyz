@@ -155,6 +155,7 @@ Cite this toolbox as:
 
 Karimpour, A., & Chen, Q. (2017). Wind Wave Analysis in Depth Limited Water Using OCEANLYZ, a MATLAB toolbox. Computers & Geosciences.
 
+Link: https://www.sciencedirect.com/science/article/pii/S0098300417306489
 
 License Agreement and Disclaimer
 --------------------------------
