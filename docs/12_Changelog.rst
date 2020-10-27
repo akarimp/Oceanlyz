@@ -8,7 +8,7 @@ What is new in ver 2.0:
 
 * From version 2.0, in addition to MATLAB and GNU Octave, OCEANLYZ is available for Python language through ScientiMate package
 * From version 2.0, OCEANLYZ is a class (instead of function). It allows OCEANLYZ to be called inside user code.
-* Release date: 2020-8-1
+* Release date: 2020-10-27
 
 Version 1.5
 -----------
