@@ -104,7 +104,7 @@ data point N-1
 data point N
 ============== ===
 
-In the burst mode:
+In the continuous mode:
 
 * N : The total number of samples in dataset
 * d : The duration of measurement in seconds
