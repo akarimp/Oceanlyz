@@ -80,14 +80,14 @@ Following properties are needed only if AnalysisMethod='spectral'
 fmin=0.05;
     Minimum frequency to cut off the spectrum below that, i.e. where f<fmin, in (Hz)
         | Results with frequency f<fmin will be removed from analysis
-        | It should be 0 <= fmin <= (fs/2)
+        | It should be between 0 and (fs/2)
         | It is a simple high pass filter
         | Only required if AnalysisMethod='spectral'
 
 fmax=1e6;
     Maximum frequency to cut off the spectrum beyond that, i.e. where f>fmax, in (Hz)
         | Results with frequency f>fmax will be removed from analysis
-        | It should be 0 <= fmin <= (fs/2)
+        | It should be between 0 and (fs/2)
         | It is a simple low pass filter
         | Only required if AnalysisMethod='spectral'
 
@@ -112,13 +112,13 @@ Kpafterfmaxpcorr='constant';
 fminpcorr=0.15;
      Minimum frequency that automated calculated fmaxpcorr can have if fmaxpcorrCalcMethod='auto' in (Hz)
         | If fmaxpcorrCalcMethod='auto', then fmaxpcorr will be checked to be larger or equal to fminpcorr
-        | It should be 0 <= fmin <= (fs/2)
+        | It should be between 0 and (fs/2)
         | Only required if InputType='pressure' and AnalysisMethod='spectral'
 
 fmaxpcorr=0.55;
     Maximum frequency for applying pressure attenuation factor in (Hz)
         | Pressure attenuation factor is not applied on frequency larger than fmaxpcorr
-        | It should be 0 <= fmin <= (fs/2)
+        | It should be between 0 and (fs/2)
         | Only required if InputType='pressure' and AnalysisMethod='spectral'
 
 heightfrombed=0.0;
@@ -154,12 +154,12 @@ SeparateSeaSwell='no';
 
 fmaxswell=0.25;
     Maximum frequency that swell can have (It is about 0.2 in Gulf of Mexico) in (Hz)
-        | It should be 0 <= fmin <= (fs/2)
+        | It should be between 0 and (fs/2)
         | Only required if SeparateSeaSwell='yes' and AnalysisMethod='spectral'
 
 fpminswell=0.1;
     Minimum frequency that swell can have (it is used for Tpswell calculation) in (Hz)
-        | It should be 0 <= fmin <= (fs/2)
+        | It should be between 0 and (fs/2)
         | Only required if SeparateSeaSwell='yes' and AnalysisMethod='spectral'
 
 tailcorrection='off';
@@ -173,7 +173,7 @@ tailcorrection='off';
 ftailcorrection=0.9;
     Frequency that spectrum tail replaced after that in (Hz)
         | ftailcorrection is typically set at ftailcorrection=(2.5*fm) where (fm=1/Tm01)
-        | It should be 0 <= fmin <= (fs/2)
+        | It should be between 0 and (fs/2)
         | Only required if SeparateSeaSwell='yes' and tailcorrection='jonswap' or tailcorrection='tma'
 
 tailpower=-5;
@@ -358,7 +358,7 @@ Computers & Geosciences, 106, 181-189.
         fmin=0.05;
         %                                 Minimum frequency to cut off the spectrum below that, i.e. where f<fmin, in (Hz)
         %                                     Results with frequency f<fmin will be removed from analysis
-        %                                     It should be 0 <= fmin <= (fs/2)
+        %                                     It should be between 0 and (fs/2)
         %                                     It is a simple high pass filter
         %                                     Only required if AnalysisMethod='spectral'
 
@@ -366,7 +366,7 @@ Computers & Geosciences, 106, 181-189.
         fmax=1e6;
         %                                 Maximum frequency to cut off the spectrum beyond that, i.e. where f>fmax, in (Hz)
         %                                     Results with frequency f>fmax will be removed from analysis
-        %                                     It should be 0 <= fmin <= (fs/2)
+        %                                     It should be between 0 and (fs/2)
         %                                     It is a simple low pass filter
         %                                     Only required if AnalysisMethod='spectral'
 
@@ -393,14 +393,14 @@ Computers & Geosciences, 106, 181-189.
         fminpcorr=0.15;
         %                                 Minimum frequency that automated calculated fmaxpcorr can have if fmaxpcorrCalcMethod='auto' in (Hz)
         %                                     If fmaxpcorrCalcMethod='auto', then fmaxpcorr will be checked to be larger or equal to fminpcorr
-        %                                     It should be 0 <= fmin <= (fs/2)
+        %                                     It should be between 0 and (fs/2)
         %                                     Only required if InputType='pressure' and AnalysisMethod='spectral'
         
         %Maximum frequency to apply a pressure response
         fmaxpcorr=0.55;
         %                                 Maximum frequency for applying pressure attenuation factor in (Hz)
         %                                     Pressure attenuation factor is not applied on frequency larger than fmaxpcorr
-        %                                     It should be 0 <= fmin <= (fs/2)
+        %                                     It should be between 0 and (fs/2)
         %                                     Only required if InputType='pressure' and AnalysisMethod='spectral'
         
         %Pressure sensor height from water bed
@@ -447,13 +447,13 @@ Computers & Geosciences, 106, 181-189.
         %maximum swell frequency
         fmaxswell=0.25;
         %                                 Maximum frequency that swell can have (It is about 0.2 in Gulf of Mexico) in (Hz)
-        %                                     It should be 0 <= fmin <= (fs/2)
+        %                                     It should be between 0 and (fs/2)
         %                                     Only required if SeparateSeaSwell='yes' and AnalysisMethod='spectral'
 
         %Minimum swell frequency
         fpminswell=0.1;
         %                                 Minimum frequency that swell can have (it is used for Tpswell calculation) in (Hz)
-        %                                     It should be 0 <= fmin <= (fs/2)
+        %                                     It should be between 0 and (fs/2)
         %                                     Only required if SeparateSeaSwell='yes' and AnalysisMethod='spectral'
 
         %--------------------
@@ -472,7 +472,7 @@ Computers & Geosciences, 106, 181-189.
         ftailcorrection=0.9;
         %                                 Frequency that spectrum tail replaced after that in (Hz)
         %                                     ftailcorrection is typically set at ftailcorrection=(2.5*fm) where (fm=1/Tm01)
-        %                                     It should be 0 <= fmin <= (fs/2)
+        %                                     It should be between 0 and (fs/2)
         %                                     Only required if SeparateSeaSwell='yes' and tailcorrection='jonswap' or tailcorrection='tma'
     
         tailpower=-5;
@@ -907,7 +907,7 @@ Computers & Geosciences, 106, 181-189.
                 %error('Input file contains NaN value(s), Oceanlyz will be terminated.');
                 warning('Input file contains NaN value(s).');
                 warning('NaN value(s) are replaced by linearly interpolated value(s).');
-                warning('Oceanlyz contniues with modified data.');
+                warning('Oceanlyz continues with modified data.');
                 
                 %Replacing NaN values
                 Indx(:,1)=linspace(1,length(d(:,1)),length(d(:,1)));
@@ -919,7 +919,7 @@ Computers & Geosciences, 106, 181-189.
                 %error('Input file contains Inf value(s), Oceanlyz will be terminated.');
                 warning('Input file contains Inf value(s).');
                 warning('Inf value(s) are replaced by linearly interpolated value(s).');
-                warning('Oceanlyz contniues with modified data.');
+                warning('Oceanlyz continues with modified data.');
                 
                 %Replacing Inf values
                 Indx(:,1)=linspace(1,length(d(:,1)),length(d(:,1)));
@@ -988,7 +988,7 @@ Computers & Geosciences, 106, 181-189.
                 end
 
                 if h<=0
-                    warning('Mean water depth is Zero or negative, Oceanlyz contniues with mean water depth=0.001 m.');
+                    warning('Mean water depth is Zero or negative, Oceanlyz continues with mean water depth=0.001 m.');
                     h=0.001;
                 end
                 
@@ -1088,9 +1088,11 @@ Computers & Geosciences, 106, 181-189.
             %FUNCTION------------------------------------------------------------------
             %Calling main calculating function
             %https://www.mathworks.com/help/matlab/matlab_oop/create-a-simple-class.html
+            %https://www.mathworks.com/help/matlab/matlab_oop/specifying-methods-and-functions.html
+            %https://www.mathworks.com/help/matlab/matlab_oop/method-invocation.html
             %https://www.mathworks.com/matlabcentral/answers/395472-how-to-call-a-method-from-a-class-called-a-within-another-method-from-a
 
-            [obj.module]=obj.oceanlyzmodule(obj);
+            [obj.module]=obj.oceanlyzmodule();
 
             %--------------------------------------------------------------------------
             %Calculate wave properties
@@ -1099,7 +1101,7 @@ Computers & Geosciences, 106, 181-189.
 
             %pkg load signal; % for Octave GNU User, it loads Signal Package 
 
-            [obj.wave]=obj.oceanlyzecalcwave(obj);
+            [obj.wave]=obj.oceanlyzecalcwave();
 
 
             %Output fields
