@@ -38,7 +38,7 @@ InputType='waterlevel'
     Define input data type
         InputType='waterlevel': Input data is water level or water depth in (m)
             If InputType='waterlevel' then OutputType='wave'
-        InputType='pressure': Input data are water pressure measured by a pressure sensor in (N/m^2)
+        InputType='pressure': Input data are water pressure measured by a pressure sensor at sensor depth in (N/m^2)
             If InputType='pressure' then OutputType='waterlevel' or OutputType='wave+waterlevel'
 
 OutputType='wave'
