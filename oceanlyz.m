@@ -106,7 +106,7 @@ Kpafterfmaxpcorr='constant';
     Define a pressure response factor, Kp, value for frequency larger than fmaxpcorr
         | Kpafterfmaxpcorr='one': Kp=1 for frequency larger than fmaxpcorr 
         | Kpafterfmaxpcorr='constant': Kp for f larger than fmaxpcorr stays equal to Kp at fmaxpcorr (constant)
-        | Kpafterfmaxpcorr='nochange': Kp is not changed for frequency larger than fmaxpcorr (Not applied yet)
+        | Kpafterfmaxpcorr='nochange': Kp is not changed for frequency larger than fmaxpcorr (Not implemented yet)
         | Only required if InputType='pressure' and AnalysisMethod='spectral'
 
 fminpcorr=0.15;
@@ -386,7 +386,7 @@ Computers & Geosciences, 106, 181-189.
         %                                 Define a pressure response factor, Kp, value for frequency larger than fmaxpcorr
         %                                     Kpafterfmaxpcorr='one': Kp=1 for frequency larger than fmaxpcorr 
         %                                     Kpafterfmaxpcorr='constant': Kp for f larger than fmaxpcorr stays equal to Kp at fmaxpcorr (constant)
-        %                                     Kpafterfmaxpcorr='nochange': Kp is not changed for frequency larger than fmaxpcorr (Not applied yet)
+        %                                     Kpafterfmaxpcorr='nochange': Kp is not changed for frequency larger than fmaxpcorr (Not implemented yet)
         %                                     Only required if InputType='pressure' and AnalysisMethod='spectral'
 
         %Minimume value of fmaxpcorr
