@@ -39,7 +39,7 @@ InputType='waterlevel';
     Define input data type
         InputType='waterlevel': Input data is water level or water depth in (m)
             If InputType='waterlevel' then OutputType='wave'
-        InputType='pressure': Input data are water pressure measured by a pressure sensor in (N/m^2)
+        InputType='pressure': Input data are water pressure measured by a pressure sensor at sensor depth in (N/m^2)
             If InputType='pressure' then OutputType='waterlevel' or OutputType='wave+waterlevel'
 
 OutputType='wave';
@@ -104,9 +104,9 @@ fmaxpcorrCalcMethod='auto';
 
 Kpafterfmaxpcorr='constant';
     Define a pressure response factor, Kp, value for frequency larger than fmaxpcorr
-        | Kpafterfmaxpcorr='nochange': Kp is not changed for frequency larger than fmaxpcorr 
         | Kpafterfmaxpcorr='one': Kp=1 for frequency larger than fmaxpcorr 
         | Kpafterfmaxpcorr='constant': Kp for f larger than fmaxpcorr stays equal to Kp at fmaxpcorr (constant)
+        | Kpafterfmaxpcorr='nochange': Kp is not changed for frequency larger than fmaxpcorr (Not applied yet)
         | Only required if InputType='pressure' and AnalysisMethod='spectral'
 
 fminpcorr=0.15;
@@ -305,7 +305,7 @@ Computers & Geosciences, 106, 181-189.
         %                                 Define input data type
         %                                     InputType='waterlevel': Input data is water level or water depth in (m)
         %                                         If InputType='waterlevel' then OutputType='wave'
-        %                                     InputType='pressure': Input data are water pressure measured by a pressure sensor in (N/m^2)
+        %                                     InputType='pressure': Input data are water pressure measured by a pressure sensor at sensor depth in (N/m^2)
         %                                         If InputType='pressure' then OutputType='waterlevel' or OutputType='wave+waterlevel'
 
         %Define output data type
@@ -384,9 +384,9 @@ Computers & Geosciences, 106, 181-189.
         %Pressure response factor for kp>fmaxpcorr
         Kpafterfmaxpcorr='constant';
         %                                 Define a pressure response factor, Kp, value for frequency larger than fmaxpcorr
-        %                                     Kpafterfmaxpcorr='nochange': Kp is not changed for frequency larger than fmaxpcorr 
         %                                     Kpafterfmaxpcorr='one': Kp=1 for frequency larger than fmaxpcorr 
         %                                     Kpafterfmaxpcorr='constant': Kp for f larger than fmaxpcorr stays equal to Kp at fmaxpcorr (constant)
+        %                                     Kpafterfmaxpcorr='nochange': Kp is not changed for frequency larger than fmaxpcorr (Not applied yet)
         %                                     Only required if InputType='pressure' and AnalysisMethod='spectral'
 
         %Minimume value of fmaxpcorr
@@ -984,7 +984,7 @@ Computers & Geosciences, 106, 181-189.
                 if strcmp(obj.InputType,'waterlevel')==1
                     h=mean(input_data(:,1)); %Calculating mean water depth from water depth data
                 elseif strcmp(obj.InputType,'pressure')==1
-                    h=mean(input_data(:,1)./(1000*9.81))+obj.heightfrombed; %Calculating mean water depth from pressure data
+                    h=mean(input_data(:,1))+obj.heightfrombed; %Calculating mean water depth from pressure data
                 end
 
                 if h<=0
