@@ -10,6 +10,7 @@ What is new in ver 2.0:
 * From version 2.0, OCEANLYZ is a class (instead of function). It allows OCEANLYZ to be called inside user code.
 * Bug fix (MATLAB): remove 'obj' as an input arguments from oceanlyzmodule() and oceanlyzecalcwave() methods (2021-07-08)
 * Bug fix: removed '/(Rho*1000)' from mean water depth calculation in oceanlyzecalcwave() method (2021-08-03)
+* Bug fix (Python): removed -1 from index fromautofmaxpcorr=='on' in PcorFFTFun function (2021-08-07)
 * Release date: 2020-10-27
 
 Version 1.5
