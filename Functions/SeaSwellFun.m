@@ -144,7 +144,9 @@ deltaf=f(2,1)-f(1,1);
 %Applying tail correction
 
 %Index of ftailcorrection
-Indxftail=min(find(f>=ftailcorrection));
+if strcmp(tailcorrection,'jonswap')==1 | strcmp(tailcorrection,'tma')==1
+    Indxftail=min(find(f>=ftailcorrection));
+end
 
 %Applying diagnostic frequency tail based on JONSWAP after fmax
 if strcmp(tailcorrection,'jonswap')==1
