@@ -12,8 +12,10 @@ To use MATLAB version of OCEANLYZ toolbox:
 * Install MATLAB or GNU Octave
 * Download OCEANLYZ:
 
-    | GitHub: https://github.com/akarimp/oceanlyz/releases/download/2.0/oceanlyz_2_0.zip
-    | CNET: https://download.cnet.com/Oceanlyz/3000-2054_4-75833686.html
+    * Version 2.0 (GitHub): https://github.com/akarimp/oceanlyz/releases/download/2.0/oceanlyz_2_0.zip
+    * Version 1.5 (CNET): https://download.cnet.com/Oceanlyz/3000-2054_4-75833686.html
+    * Version 1.5 (GitHub): https://github.com/akarimp/oceanlyz/releases/download/1.5/oceanlyz_1_5.zip
+    * Version 1.4 (GitHub): https://github.com/akarimp/oceanlyz/releases/download/1.5/oceanlyz_1_4.zip
 
 * Unzip OCEANLYZ in any location you choose such as “C:\\”
 
@@ -79,11 +81,3 @@ Quick Start
 * Change a current folder (working directory) to a folder that contains OCEANLYZ files, for example “C:\\oceanlyz”, in MATLAB or GNU Octave.
 * Create OCEANLYZ object such as “ocn=oceanlyz” in MATLAB or GNU Octave and set/modify its properties based on the dataset and required analysis.
 * Run a method as “ocn.runoceanlyz()” in MATLAB or GNU Octave to start calculations.
-
-Download Previous Version
--------------------------
-
-Download previous MATLAB version of OCEANLYZ toolbox
-
-* Ver 1.5: https://github.com/akarimp/oceanlyz/releases/download/1.5/oceanlyz_1_5.zip
-* Ver 1.4: https://github.com/akarimp/oceanlyz/releases/download/1.5/oceanlyz_1_4.zip
