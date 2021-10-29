@@ -11,6 +11,7 @@ What is new in ver 2.0:
 * Bug fix (MATLAB): remove 'obj' as an input arguments from oceanlyzmodule() and oceanlyzecalcwave() methods (2021-07-08)
 * Bug fix: removed '/(Rho*1000)' from mean water depth calculation in oceanlyzecalcwave() method (2021-08-03)
 * Bug fix (Python): removed -1 from index of if autofmaxpcorr=='on': in PcorFFTFun function (2021-08-07)
+* Bug fix : Add 'if tailcorrection=='jonswap' or tailcorrection=='tma':' in WaveSpectraFun and SeaSwellFun functions (2021-10-26)
 * Release date: 2020-10-27
 
 Version 1.5
