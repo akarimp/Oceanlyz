@@ -40,7 +40,7 @@ Installation (Python Version)
 To use Python version of OCEANLYZ toolbox:
 
 * Install Python
-* Install ScientiMate (Python version of OCEANLYZ toolbox is part of ScintiMate package)
+* Install OCEANLYZ
 
 **1) Install Python**
 
@@ -51,27 +51,27 @@ First, we need to install Python programming language.
 * Method 2 (Recommended):
     Install Anaconda Python distribution from https://www.anaconda.com and then use the **conda** command to install required packages
 
-**2) Install ScientiMate**
+**2) Install OCEANLYZ**
 
-After Python is installed, we need to install ScientiMate package.
+After Python is installed, we need to install OCEANLYZ package.
 
-To install ScientiMate via pip (https://pypi.org/project/scientimate):
-
-.. code:: python
-
-    pip install scientimate
-
-To install ScientiMate via Anaconda cloud (https://anaconda.org/akarimp/scientimate):
+To install OCEANLYZ via pip (https://pypi.org/project/oceanlyz):
 
 .. code:: python
 
-     conda install -c akarimp scientimate
+    pip install oceanlyz
+
+To install OCEANLYZ via Anaconda cloud (https://anaconda.org/akarimp/oceanlyz):
+
+.. code:: python
+
+    conda install -c akarimp oceanlyz
 
 
 Operating System
 ----------------
 
-This code can be run on Windows, Mac and Linux. However, make sure any given path is compatible with a running operating system. In particular, “\\” is used in Windows path, while “/” is used in Mac or Linux path. For example, if a path is “C:\\” on Windows machine, it would be “C:/” on Mac or Linux.
+This code can be run on Windows, Mac, and Linux. However, make sure any given path is compatible with a running operating system. In particular, “\\” is used in Windows path, while “/” is used in Mac or Linux path. For example, if a path is “C:\\” on Windows machine, it would be “C:/” on Mac or Linux.
 
 
 Required Programing Language
@@ -130,8 +130,8 @@ Quick Start (Python Version)
 ----------------------------
 
 * Open Python
-* Import ScientiMate package by using "import scientimate as sm" 
-* Create OCEANLYZ object such as “ocn=sm.oceanlyz()” in Python and set/modify its properties based on the dataset and required analysis.
+* Import OCEANLYZ package by using "import oceanlyz" 
+* Create OCEANLYZ object such as “ocn=oceanlyz.oceanlyz()” in Python and set/modify its properties based on the dataset and required analysis.
 * Run a method as “ocn.runoceanlyz()” in Python to start calculations.
 
 
@@ -164,7 +164,7 @@ License Agreement and Disclaimer
 
 OCEANLYZ: Ocean Wave Analyzing Toolbox
 
-Copyright (c) 2020 Arash Karimpour
+Copyright (c) 2022 Arash Karimpour
 
 All rights reserved
 
