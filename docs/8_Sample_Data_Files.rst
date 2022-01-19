@@ -2,8 +2,8 @@ Sample Data Files
 =================
 
 Two sample data files are provided to be used with OCEANLYZ.
-The first file is named “waterpressure_1burst.csv”, and contains one burst of water pressure data recorded with a pressure sensor.
-The second file is named “waterpressure_5burst.csv”, and contains five bursts of water pressure data recorded with a pressure sensor.
+The first file is named "waterpressure_1burst.csv", and contains one burst of water pressure data recorded with a pressure sensor.
+The second file is named "waterpressure_5burst.csv", and contains five bursts of water pressure data recorded with a pressure sensor.
 Data in either of these two files can be used as input data for OCEANLYZ.
 
 Download
@@ -17,7 +17,7 @@ Download sample data files:
 Properties
 ----------
 
-Measurement properties for a file named “waterpressure_1burst.csv” are:
+Measurement properties for a file named "waterpressure_1burst.csv" are:
 
 ===============================================   ========================   ========================
 Properties                                        Value                      OCEANLYZ Properties
@@ -31,7 +31,7 @@ Pressure sensor height from bed (heightfrombed)   0.05 (m)                   obj
 Mean water depth (h)                              1.07 (m)
 ===============================================   ========================   ========================
 
-Measurement properties for a file named “waterpressure_5burst.csv” are:
+Measurement properties for a file named "waterpressure_5burst.csv" are:
 
 ===============================================   ========================   ========================
 Properties                                        Value                      OCEANLYZ Properties

@@ -31,9 +31,6 @@ Functions (MATLAB Version)
 
 Functions (Python Version)
 --------------------------
-| The Python version of OCEANLYZ toolbox is a part of the ScintiMate package.
-| For more information, visit https://scientimate.readthedocs.io
-
 .. toctree::
     :maxdepth: 1
     

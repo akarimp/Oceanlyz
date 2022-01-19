@@ -1,9 +1,7 @@
 Getting Started (Python Version)
 ================================
 
-The Python version of OCEANLYZ toolbox is part of ScintiMate package (https://scientimate.readthedocs.io).
-
-In order to use Python version of OCEANLYZ toolbox, first, Python programming language, and then, the ScientiMate package should be installed.
+In order to use Python version of OCEANLYZ toolbox, first, Python programming language, and then, the OCEANLYZ package should be installed.
 
 
 Installation
@@ -12,7 +10,7 @@ Installation
 To use Python version of OCEANLYZ toolbox:
 
 * Install Python
-* Install ScientiMate (Python version of OCEANLYZ toolbox is part of ScintiMate package)
+* Install OCEANLYZ
 
 **1) Install Python**
 
@@ -23,21 +21,21 @@ First, we need to install Python programming language.
 * Method 2 (Recommended):
     Install Anaconda Python distribution from https://www.anaconda.com and then use the **conda** command to install required packages
 
-**2) Install ScientiMate**
+**2) Install OCEANLYZ**
 
-After Python is installed, we need to install ScientiMate package.
+After Python is installed, we need to install OCEANLYZ package.
 
-To install ScientiMate via pip (https://pypi.org/project/scientimate):
-
-.. code:: python
-
-    pip install scientimate
-
-To install ScientiMate via Anaconda cloud (https://anaconda.org/akarimp/scientimate):
+To install OCEANLYZ via pip (https://pypi.org/project/oceanlyz):
 
 .. code:: python
 
-     conda install -c akarimp scientimate
+    pip install oceanlyz
+
+To install OCEANLYZ via Anaconda cloud (https://anaconda.org/akarimp/oceanlyz):
+
+.. code:: python
+
+    conda install -c akarimp oceanlyz
 
 
 Operating System
@@ -66,6 +64,6 @@ Quick Start
 -----------
 
 * Open Python
-* Import ScientiMate package by using "import scientimate as sm" 
-* Create OCEANLYZ object such as “ocn=sm.oceanlyz()” in Python and set/modify its properties based on the dataset and required analysis.
+* Import OCEANLYZ package by using "import oceanlyz" 
+* Create OCEANLYZ object such as “ocn=oceanlyz.oceanlyz()” in Python and set/modify its properties based on the dataset and required analysis.
 * Run a method as “ocn.runoceanlyz()” in Python to start calculations.

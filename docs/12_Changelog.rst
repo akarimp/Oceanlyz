@@ -6,7 +6,7 @@ Version 2.0
 
 What is new in ver 2.0:
 
-* From version 2.0, in addition to MATLAB and GNU Octave, OCEANLYZ is available for Python language through ScientiMate package
+* From version 2.0, in addition to MATLAB and GNU Octave, OCEANLYZ is available for Python language through OCEANLYZ package
 * From version 2.0, OCEANLYZ is a class (instead of function). It allows OCEANLYZ to be called inside user code.
 * Bug fix (MATLAB): remove 'obj' as an input arguments from oceanlyzmodule() and oceanlyzecalcwave() methods (2021-07-08)
 * Bug fix: removed '/(Rho*1000)' from mean water depth calculation in oceanlyzecalcwave() method (2021-08-03)

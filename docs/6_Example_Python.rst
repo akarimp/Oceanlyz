@@ -20,12 +20,12 @@ Mean water depth (h)                              Varies in each burst
 ===============================================   ========================   ========================
 
 
-To start using OCEANLYZ, first, we need to be import required libraries. Remember, Python version of OCEANLYZ is part of ScientiMate, and therefore, we need to import ScientiMate to use OCEANLYZ:
+To start using OCEANLYZ, first, we need to be import required libraries.
 
 .. code:: python
 
     #Import libraries
-    import scientimate as sm
+    import oceanlyz
     import os
     import numpy as np
     import matplotlib.pyplot as plt
@@ -60,7 +60,7 @@ Then, we need to create an OCEANLYZ object as:
 .. code:: python
 
     #Create OCEANLYZ object
-    ocn = sm.oceanlyz()
+    ocn = oceanlyz.oceanlyz()
 
 
 Next, we assign wave data to OCEANLYZ object as:

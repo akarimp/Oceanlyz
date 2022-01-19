@@ -1,7 +1,7 @@
 .. YA LATIF
 
 .. OCEANLYZ documentation master file, created by
-   sphinx-quickstart on Mon Oct 26 17:32:05 2020.
+   sphinx-quickstart on Tue Jan 18 15:57:08 2022.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -39,7 +39,7 @@ User Guide
 .. toctree::
     :maxdepth: 2
 
-    4_API
+    4_API.rst
 
 .. toctree::
     :maxdepth: 1
