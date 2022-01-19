@@ -10,12 +10,12 @@
 .. +                                                                        +
 .. ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-scientimate.PcorZerocrossingFun
-===============================
+oceanlyz.PcorZerocrossingFun
+============================
 
 .. code:: python
 
-    Eta=scientimate.PcorZerocrossingFun(input,fs,duration,h,heightfrombed,dispout)
+    Eta=oceanlyz.PcorZerocrossingFun(input,fs,duration,h,heightfrombed,dispout)
 
 DESCRIPTION
 -----------

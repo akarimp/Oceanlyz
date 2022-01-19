@@ -10,12 +10,12 @@
 .. +                                                                        +
 .. ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-scientimate.PcorFFTFun
-======================
+oceanlyz.PcorFFTFun
+===================
 
 .. code:: python
 
-    Eta,ftailcorrection=scientimate.PcorFFTFun(input,fs,duration,nfft,h,heightfrombed,fminpcorr,fmaxpcorr,ftailcorrection,pressureattenuation,autofmaxpcorr,dispout)
+    Eta,ftailcorrection=oceanlyz.PcorFFTFun(input,fs,duration,nfft,h,heightfrombed,fminpcorr,fmaxpcorr,ftailcorrection,pressureattenuation,autofmaxpcorr,dispout)
 
 DESCRIPTION
 -----------

@@ -10,12 +10,12 @@
 .. +                                                                        +
 .. ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-scientimate.SeaSwellFun
-=======================
+oceanlyz.SeaSwellFun
+====================
 
 .. code:: python
 
-    Hm0,Hm0sea,Hm0swell,Tp,Tpsea,Tpswell,fp,fseparation,f,Syy=scientimate.SeaSwellFun(input,fs,duration,nfft,h,fmin,fmax,ftailcorrection,tailpower,fminswell,fmaxswell,mincutoff,maxcutoff,tailcorrection,dispout)
+    Hm0,Hm0sea,Hm0swell,Tp,Tpsea,Tpswell,fp,fseparation,f,Syy=oceanlyz.SeaSwellFun(input,fs,duration,nfft,h,fmin,fmax,ftailcorrection,tailpower,fminswell,fmaxswell,mincutoff,maxcutoff,tailcorrection,dispout)
 
 DESCRIPTION
 -----------

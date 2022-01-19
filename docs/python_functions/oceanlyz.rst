@@ -10,19 +10,18 @@
 .. +                                                                        +
 .. ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-scientimate.oceanlyz (Python Version)
-=====================================
+oceanlyz.oceanlyz (Python Version)
+==================================
 
 .. code:: python
 
-    oceanlyz_object = scientimate.oceanlyz()
+    oceanlyz_object = oceanlyz.oceanlyz()
 
 DESCRIPTION
 -----------
 
 | Calculate wave properties from water level or water pressure data
 | For OCEANLYZ Document visit https://oceanlyz.readthedocs.io
-| For ScientiMate Document visit https://scientimate.readthedocs.io
 
 Required Properties
 -------------------
@@ -38,7 +37,7 @@ InputType='waterlevel'
     Define input data type
         InputType='waterlevel': Input data is water level or water depth in (m)
             If InputType='waterlevel' then OutputType='wave'
-        InputType='pressure': Input data are water pressure measured by a pressure sensor at sensor depth in (N/m^2)
+        InputType='pressure': Input data are water pressure measured by a pressure sensor in (N/m^2)
             If InputType='pressure' then OutputType='waterlevel' or OutputType='wave+waterlevel'
 
 OutputType='wave'
@@ -79,14 +78,14 @@ Following properties are needed only if AnalysisMethod='spectral'
 fmin=0.05
     Minimum frequency to cut off the spectrum below that, i.e. where f<fmin, in (Hz)
         | Results with frequency f<fmin will be removed from analysis
-        | It should be 0 <= fmin <= (fs/2)
+        | It should be between 0 and (fs/2)
         | It is a simple high pass filter
         | Only required if AnalysisMethod='spectral'
 
 fmax=1e6
     Maximum frequency to cut off the spectrum beyond that, i.e. where f>fmax, in (Hz)
         | Results with frequency f>fmax will be removed from analysis
-        | It should be 0 <= fmin <= (fs/2)
+        | It should be between 0 and (fs/2)
         | It is a simple low pass filter
         | Only required if AnalysisMethod='spectral'
 
@@ -103,21 +102,21 @@ fmaxpcorrCalcMethod='auto'
 
 Kpafterfmaxpcorr='constant'
     Define a pressure response factor, Kp, value for frequency larger than fmaxpcorr
+        | Kpafterfmaxpcorr='nochange': Kp is not changed for frequency larger than fmaxpcorr 
         | Kpafterfmaxpcorr='one': Kp=1 for frequency larger than fmaxpcorr 
         | Kpafterfmaxpcorr='constant': Kp for f larger than fmaxpcorr stays equal to Kp at fmaxpcorr (constant)
-        | Kpafterfmaxpcorr='nochange': Kp is not changed for frequency larger than fmaxpcorr (Not implemented yet)
         | Only required if InputType='pressure' and AnalysisMethod='spectral'
 
 fminpcorr=0.15
     Minimum frequency that automated calculated fmaxpcorr can have if fmaxpcorrCalcMethod='auto' in (Hz)
         | If fmaxpcorrCalcMethod='auto', then fmaxpcorr will be checked to be larger or equal to fminpcorr
-        | It should be 0 <= fmin <= (fs/2)
+        | It should be between 0 and (fs/2)
         | Only required if InputType='pressure' and AnalysisMethod='spectral'
 
 fmaxpcorr=0.55
     Maximum frequency for applying pressure attenuation factor in (Hz)
         | Pressure attenuation factor is not applied on frequency larger than fmaxpcorr
-        | It should be 0 <= fmin <= (fs/2)
+        | It should be between 0 and (fs/2)
         | Only required if InputType='pressure' and AnalysisMethod='spectral'
 
 heightfrombed=0.0
@@ -153,12 +152,12 @@ SeparateSeaSwell='no'
 
 fmaxswell=0.25
     Maximum frequency that swell can have (It is about 0.2 in Gulf of Mexico) in (Hz)
-        | It should be 0 <= fmin <= (fs/2)
+        | It should be between 0 and (fs/2)
         | Only required if SeparateSeaSwell='yes' and AnalysisMethod='spectral'
 
 fpminswell=0.1
     Minimum frequency that swell can have (it is used for Tpswell calculation) in (Hz)
-        | It should be 0 <= fmin <= (fs/2)
+        | It should be between 0 and (fs/2)
         | Only required if SeparateSeaSwell='yes' and AnalysisMethod='spectral'
 
 tailcorrection='off'
@@ -172,7 +171,7 @@ tailcorrection='off'
 ftailcorrection=0.9
     Frequency that spectrum tail replaced after that in (Hz)
         | ftailcorrection is typically set at ftailcorrection=(2.5*fm) where (fm=1/Tm01)
-        | It should be 0 <= fmin <= (fs/2)
+        | It should be between 0 and (fs/2)
         | Only required if SeparateSeaSwell='yes' and tailcorrection='jonswap' or tailcorrection='tma'
 
 tailpower=-5
@@ -208,14 +207,14 @@ Examples
 .. code:: python
 
     #Import libraries
-    import scientimate as sm
+    import oceanlyz
     import numpy as np
     import matplotlib.pyplot as plt
     import os
 
     #Create OCEANLYZ object
     #del ocn #Optional
-    ocn=sm.oceanlyz()
+    ocn=oceanlyz.oceanlyz()
     
     #Read data
     #Assume data file is named 'waterpressure_5burst.csv' and is stored in 'C:\oceanlyz_python\Sample_Data'

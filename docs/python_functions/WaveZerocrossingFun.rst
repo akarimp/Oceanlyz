@@ -10,12 +10,12 @@
 .. +                                                                        +
 .. ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-scientimate.WaveZerocrossingFun
-===============================
+oceanlyz.WaveZerocrossingFun
+============================
 
 .. code:: python
 
-    Hs,Hz,Tz,Ts,H,T=scientimate.WaveZerocrossingFun(input,fs,duration,dispout)
+    Hs,Hz,Tz,Ts,H,T=oceanlyz.WaveZerocrossingFun(input,fs,duration,dispout)
 
 DESCRIPTION
 -----------

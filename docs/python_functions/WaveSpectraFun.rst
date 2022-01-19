@@ -10,12 +10,12 @@
 .. +                                                                        +
 .. ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-scientimate.WaveSpectraFun
-==========================
+oceanlyz.WaveSpectraFun
+=======================
 
 .. code:: python
 
-    Hm0,Tm01,Tm02,Tp,fp,f,Syy=scientimate.WaveSpectraFun(input,fs,duration,nfft,h,heightfrombed,fmin,fmax,ftailcorrection,tailpower,mincutoff,maxcutoff,tailcorrection,dispout)
+    Hm0,Tm01,Tm02,Tp,fp,f,Syy=oceanlyz.WaveSpectraFun(input,fs,duration,nfft,h,heightfrombed,fmin,fmax,ftailcorrection,tailpower,mincutoff,maxcutoff,tailcorrection,dispout)
 
 DESCRIPTION
 -----------
