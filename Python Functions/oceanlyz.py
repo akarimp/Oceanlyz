@@ -149,8 +149,8 @@ class oceanlyz:
 
     SeparateSeaSwell='no'
         Define if to separate wind sea and swell waves or not
-            | SeparateSeaSwell='yes': Does not separate wind sea and swell waves
-            | SeparateSeaSwell='no': Separates wind sea and swell waves
+            | SeparateSeaSwell='no': Does not separate wind sea and swell waves
+            | SeparateSeaSwell='yes': Separates wind sea and swell waves
 
     fmaxswell=0.25
         Maximum frequency that swell can have (It is about 0.2 in Gulf of Mexico) in (Hz)
@@ -451,8 +451,8 @@ class oceanlyz:
         #Sea and swell separation
         self.SeparateSeaSwell='no'
         #                                 Define if to separate wind sea and swell waves or not
-        #                                     SeparateSeaSwell='yes': Does not separate wind sea and swell waves
-        #                                     SeparateSeaSwell='no': Separates wind sea and swell waves
+        #                                     SeparateSeaSwell='no': Does not separate wind sea and swell waves
+        #                                     SeparateSeaSwell='yes': Separates wind sea and swell waves
 
         #maximum swell frequency
         self.fmaxswell=0.25
