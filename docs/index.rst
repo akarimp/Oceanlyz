@@ -39,7 +39,7 @@ User Guide
 .. toctree::
     :maxdepth: 2
 
-    4_API.rst
+    4_Functions_List.rst
 
 .. toctree::
     :maxdepth: 1

@@ -14,7 +14,7 @@ To use Python version of OCEANLYZ toolbox:
 
 **1) Install Python**
 
-First, we need to install Python programming language.
+First, you need to install Python programming language.
 
 * Method 1:
     Install pure Python from https://www.python.org and then use the **pip** command to install required packages
@@ -23,15 +23,15 @@ First, we need to install Python programming language.
 
 **2) Install OCEANLYZ**
 
-After Python is installed, we need to install OCEANLYZ package.
+After Python is installed, you need to install OCEANLYZ package.
 
-To install OCEANLYZ via pip (https://pypi.org/project/oceanlyz):
+To install OCEANLYZ via pip (https://pypi.org/project/oceanlyz) if you use pure Python:
 
 .. code:: python
 
     pip install oceanlyz
 
-To install OCEANLYZ via Anaconda cloud (https://anaconda.org/akarimp/oceanlyz):
+To install OCEANLYZ via Anaconda cloud (https://anaconda.org/akarimp/oceanlyz) if you use Anaconda Python distribution:
 
 .. code:: python
 
@@ -41,7 +41,7 @@ To install OCEANLYZ via Anaconda cloud (https://anaconda.org/akarimp/oceanlyz):
 Operating System
 ----------------
 
-This code can be run on Windows, Mac, and Linux. However, make sure any given path is compatible with a running operating system. In particular, “\\” is used in Windows path, while “/” is used in Mac or Linux path. For example, if a path is “C:\\” on Windows machine, it would be “C:/” on Mac or Linux.
+This code can be run on Windows, Mac, and Linux. However, make sure any given path is compatible with a running operating system. In particular, "\\" is used in Windows path, while "/" is used in Mac or Linux path. For example, if a path is "C:\\" on Windows machine, it would be "C:/" on Mac or Linux.
 
 
 Required Programing Language
@@ -65,5 +65,5 @@ Quick Start
 
 * Open Python
 * Import OCEANLYZ package by using "import oceanlyz" 
-* Create OCEANLYZ object such as “ocn=oceanlyz.oceanlyz()” in Python and set/modify its properties based on the dataset and required analysis.
-* Run a method as “ocn.runoceanlyz()” in Python to start calculations.
+* Create OCEANLYZ object such as "ocn=oceanlyz.oceanlyz()" in Python and set/modify its properties based on the dataset and required analysis.
+* Run a method as "ocn.runoceanlyz()" in Python to start calculations.

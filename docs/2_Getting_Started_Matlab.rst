@@ -17,28 +17,31 @@ To use MATLAB version of OCEANLYZ toolbox:
     * Version 1.5 (GitHub): https://github.com/akarimp/oceanlyz/releases/download/1.5/oceanlyz_1_5.zip
     * Version 1.4 (GitHub): https://github.com/akarimp/oceanlyz/releases/download/1.5/oceanlyz_1_4.zip
 
-* Unzip OCEANLYZ in any location you choose such as “C:\\”
+* Unzip OCEANLYZ in any location you choose such as "C:\\"
 
 One way to access OCEANLYZ is to copy OCEANLYZ files and its sub-folders in your desire working directory and then use it there.
 Another option is to add OCEANLYZ folder to MATLAB path. By doing that, you always have access to OCEANLYZ from any working directory.
-For example, if OCEANLYZ files are in “C:\\oceanlyz” folder then it can be added to path as:
+You need to do this only once.
+For example, if OCEANLYZ files are in "C:\\oceanlyz" folder then it can be added to path as:
 
 .. code:: MATLAB
 
-    OceanlyzPath=genpath('C:\oceanlyz'); %Generating path for OCEANLYZ folder and its sub-folders
-    addpath(OceanlyzPath);
+    OceanlyzPath = genpath('C:\oceanlyz'); %Generating path for OCEANLYZ folder and its sub-folders
+    addpath(OceanlyzPath); %Add OCEANLYZ folder to path
 
 To remove OCEANLYZ from the path use:
 
 .. code:: MATLAB
 
-    rmpath(OceanlyzPath);
+    OceanlyzPath = genpath('C:\oceanlyz'); %Generating path for OCEANLYZ folder and its sub-folders
+    rmpath(OceanlyzPath); %Remove OCEANLYZ folder from path
+    %restoredefaultpath; %Restore path to factory-installed state
 
 
 Operating System
 ----------------
 
-This code can be run on Windows, Mac and Linux. However, make sure any given path is compatible with a running operating system. In particular, “\\” is used in Windows path, while “/” is used in Mac or Linux path. For example, if a path is “C:\\” on Windows machine, it would be “C:/” on Mac or Linux.
+This code can be run on Windows, Mac and Linux. However, make sure any given path is compatible with a running operating system. In particular, "\\" is used in Windows path, while "/" is used in Mac or Linux path. For example, if a path is "C:\\" on Windows machine, it would be "C:/" on Mac or Linux.
 
 
 Required Programing Language
@@ -78,6 +81,6 @@ Quick Start
 -----------
 
 * Open MATLAB or GNU Octave
-* Change a current folder (working directory) to a folder that contains OCEANLYZ files, for example “C:\\oceanlyz”, in MATLAB or GNU Octave.
-* Create OCEANLYZ object such as “ocn=oceanlyz” in MATLAB or GNU Octave and set/modify its properties based on the dataset and required analysis.
-* Run a method as “ocn.runoceanlyz()” in MATLAB or GNU Octave to start calculations.
+* Change a current folder (working directory) to a folder that contains OCEANLYZ files, for example "C:\\oceanlyz", in MATLAB or GNU Octave.
+* Create OCEANLYZ object such as "ocn=oceanlyz" in MATLAB or GNU Octave and set/modify its properties based on the dataset and required analysis.
+* Run a method as "ocn.runoceanlyz()" in MATLAB or GNU Octave to start calculations.
