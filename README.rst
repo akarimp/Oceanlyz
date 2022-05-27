@@ -15,7 +15,7 @@ This toolbox contains functions that each one is suitable for a particular purpo
 :Documentation: https://oceanlyz.readthedocs.io
 :Tutorial Video: `YouTube Playlist <https://www.youtube.com/playlist?list=PLcrFHi9M_GZRTCshcgujlK7y5ZPim6afM>`_
 :Source Code: https://github.com/akarimp/oceanlyz
-:Report Issues: https://github.com/akarimp/oceanlyz/issues
+:Report Issues: https://github.com/akarimp/Oceanlyz/issues
 
 
 Installation (MATLAB Version)
