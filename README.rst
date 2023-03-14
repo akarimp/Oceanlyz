@@ -10,13 +10,25 @@ This toolbox contains functions that each one is suitable for a particular purpo
 :Name: OCEANLYZ
 :Description: Ocean Wave Analyzing Toolbox
 :Version: 2.0
-:Requirements: MATLAB, or GNU Octave, or Python (3 or later)
+:Requirements: MATLAB or GNU Octave | Python (3 or later) | GUI Version (stand-alone)
 :Developer: Arash Karimpour (http://www.arashkarimpour.com)
 :Documentation: https://oceanlyz.readthedocs.io
 :Tutorial Video: `YouTube Playlist <https://www.youtube.com/playlist?list=PLcrFHi9M_GZRTCshcgujlK7y5ZPim6afM>`_
 :Source Code: https://github.com/akarimp/oceanlyz
 :Report Issues: https://github.com/akarimp/Oceanlyz/issues
 
+
+Installation (GUI Version)
+--------------------------
+
+To use stand-alone GUI version of OCEANLYZ (Windows):
+
+* Download OCEANLYZ GUI setup file:
+
+    * Version 1.1 (GitHub): https://github.com/akarimp/Oceanlyz-GUI/releases/download/1.1/oceanlyz_gui_1.1_win_x64_setup.exe
+
+* Run and follow setup file to install OCEANLYZ GUI
+* Start OCEANLYZ GUI
 
 Installation (MATLAB Version)
 -----------------------------
