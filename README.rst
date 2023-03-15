@@ -29,6 +29,7 @@ To use stand-alone GUI version of OCEANLYZ (Windows):
 
 * Run and follow setup file to install OCEANLYZ GUI
 * Start OCEANLYZ GUI
+* For documentation, use Help menu in OCEANLYZ GUI
 
 Installation (MATLAB Version)
 -----------------------------
@@ -86,8 +87,8 @@ Operating System
 This code can be run on Windows, Mac, and Linux. However, make sure any given path is compatible with a running operating system. In particular, “\\” is used in Windows path, while “/” is used in Mac or Linux path. For example, if a path is “C:\\” on Windows machine, it would be “C:/” on Mac or Linux.
 
 
-Required Programing Language
-----------------------------
+Required Programming Language
+-----------------------------
 
 This toolbox can be run by using MATLAB (https://www.mathworks.com), GNU Octave (https://www.gnu.org/software/octave), or Python (https://www.python.org). 
 
