@@ -32,8 +32,8 @@ To use stand-alone GUI version of OCEANLYZ (Microsoft Windows (64-bit)):
 * Start OCEANLYZ GUI
 * For documentation, use Help menu in OCEANLYZ GUI
 
-Installing (MATLAB Version)
----------------------------
+Installing (MATLAB)
+-------------------
 
 To use MATLAB version of OCEANLYZ toolbox:
 
@@ -48,8 +48,8 @@ To use MATLAB version of OCEANLYZ toolbox:
 * Unzip OCEANLYZ in any location you choose such as “C:\\”
 
 
-Installing (Python Version)
----------------------------
+Installing (Python)
+-------------------
 
 To use Python version of OCEANLYZ toolbox:
 
@@ -131,8 +131,8 @@ Following packages are required:
 * Matplotlib (https://matplotlib.org)
 
 
-Quick Start (MATLAB Version)
-----------------------------
+Quick Start (MATLAB)
+--------------------
 
 * Open MATLAB or GNU Octave
 * Change a current folder (current directory) to a folder that contains OCEANLYZ toolbox, for example “C:\\oceanlyz”, in MATLAB or GNU Octave.
@@ -140,8 +140,8 @@ Quick Start (MATLAB Version)
 * Run a file named “RunOceanlyz.m” in MATLAB or GNU Octave to start calculations.
 
 
-Quick Start (Python Version)
-----------------------------
+Quick Start (Python)
+--------------------
 
 * Open Python
 * Import OCEANLYZ package by using "import oceanlyz" 
@@ -157,24 +157,27 @@ Recommended Books
    :align: center
 
    * - .. figure:: figures/Figure_Book_Coastal.jpg
-     - .. figure:: figures/Figure_Book_Python.jpg
      - .. figure:: figures/Figure_Book_Matlab.jpg
+     - .. figure:: figures/Figure_Book_Python.jpg
 
    * - | **Ocean Wave Data Analysis**
        | Introduction to Time Series Analysis, Signal Processing, and Wave Prediction.
        |
        | Order at Amazon: https://www.amazon.com/dp/0692109978
-       | Read Online at: https://github.com/akarimp/Ocean-Wave-Data-Analysis
+       |
+       | Read Online: https://github.com/akarimp/Ocean-Wave-Data-Analysis
      - | **Fundamentals of Data Science with MATLAB**
        | Introduction to Scientific Computing, Data Analysis, and Data Visualization.
        |
        | Order at Amazon: https://www.amazon.com/dp/1735241016
-       | Read Online at: https://github.com/akarimp/Fundamentals-of-Data-Science-with-MATLAB
+       |
+       | Read Online: https://github.com/akarimp/Fundamentals-of-Data-Science-with-MATLAB
      - | **Principles of Data Science with Python**
        | Introduction to Scientific Computing, Data Analysis, and Data Visualization.
        |
        | Order at Amazon: https://www.amazon.com/dp/1735241008
-       | Read Online at: https://github.com/akarimp/Principles-of-Data-Science-with-Python
+       |
+       | Read Online: https://github.com/akarimp/Principles-of-Data-Science-with-Python
 
 
 Recommended Application
@@ -185,6 +188,9 @@ Recommended Application
    :align: center
 
    * - .. figure:: figures/Figure_AsanPlot_Screenshot.jpg
+            :width: 1777 px
+            :height: 1002 px
+            :scale: 20 %
 
    * - | **AsanPlot**
        | Data cleaning and plotting software.
