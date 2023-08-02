@@ -19,6 +19,9 @@ This toolbox provides spectral and zero-crossing wave analysis. It can calculate
 :Source Code: https://github.com/akarimp/Oceanlyz
 :Report Issues: https://github.com/akarimp/Oceanlyz/issues
 
+GUI Version
+===========
+
 Installing (GUI Version)
 ------------------------
 
@@ -31,6 +34,9 @@ To use stand-alone GUI version of OCEANLYZ (Microsoft Windows (64-bit)):
 * Run and follow setup file to install OCEANLYZ GUI
 * Start OCEANLYZ GUI
 * For documentation, use Help menu in OCEANLYZ GUI
+
+MATLAB Version
+==============
 
 Installing (MATLAB)
 -------------------
@@ -47,6 +53,43 @@ To use MATLAB version of OCEANLYZ toolbox:
 
 * Unzip OCEANLYZ in any location you choose such as “C:\\”
 
+Required Package for MATLAB
+---------------------------
+
+MATLAB users need to install MATLAB Signal Processing Toolbox for running the Oceanlyz spectral analysis. It gives Oceanlyz access to MATLAB Welch's power spectral density calculation. However, MATLAB Signal Processing Toolbox it is not required for zero-crossing analysis. 
+
+
+Required Package for GNU Octave
+-------------------------------
+
+GNU Octave users need to install/load GNU Octave Signal Package for running the Oceanlyz spectral analysis. It gives Oceanlyz access to GNU Octave Welch's power spectral density calculation. However, GNU Octave Signal Package it is not required for zero-crossing analysis.
+
+GNU Octave Signal Package can be loaded inside GNU Octave by using a following command in a command window (This should be done every time GNU Octave is opened):
+
+
+.. code:: octave
+    
+    >> pkg load signal
+
+
+If GNU Octave Signal Package is not already installed, it should be first installed from Octave Forge (octave.sourceforge.io), and then get loaded by using the following commands in a command window:
+
+.. code:: octave
+
+    >> pkg install -forge signal
+    >> pkg load signal
+
+Quick Start (MATLAB)
+--------------------
+
+* Open MATLAB or GNU Octave
+* Change a current folder (current directory) to a folder that contains OCEANLYZ toolbox, for example “C:\\oceanlyz”, in MATLAB or GNU Octave.
+* Open a file named “oceanlyzinput.m” in MATLAB or GNU Octave editor and modify it based on the properties of the collected dataset and required analysis.
+* Run a file named “RunOceanlyz.m” in MATLAB or GNU Octave to start calculations.
+
+
+Python Version
+==============
 
 Installing (Python)
 -------------------
@@ -82,45 +125,6 @@ To install OCEANLYZ via Anaconda cloud (https://anaconda.org/akarimp/oceanlyz):
     conda install -c akarimp oceanlyz
 
 
-Operating System
-----------------
-
-This code can be run on Windows, Mac, and Linux. However, make sure any given path is compatible with a running operating system. In particular, “\\” is used in Windows path, while “/” is used in Mac or Linux path. For example, if a path is “C:\\” on Windows machine, it would be “C:/” on Mac or Linux.
-
-
-Required Programming Language
------------------------------
-
-This toolbox can be run by using MATLAB (https://www.mathworks.com), GNU Octave (https://www.gnu.org/software/octave), or Python (https://www.python.org). 
-
-
-Required Package for MATLAB
----------------------------
-
-MATLAB users need to install MATLAB Signal Processing Toolbox for running the Oceanlyz spectral analysis. It gives Oceanlyz access to MATLAB Welch's power spectral density calculation. However, MATLAB Signal Processing Toolbox it is not required for zero-crossing analysis. 
-
-
-Required Package for GNU Octave
--------------------------------
-
-GNU Octave users need to install/load GNU Octave Signal Package for running the Oceanlyz spectral analysis. It gives Oceanlyz access to GNU Octave Welch's power spectral density calculation. However, GNU Octave Signal Package it is not required for zero-crossing analysis.
-
-GNU Octave Signal Package can be loaded inside GNU Octave by using a following command in a command window (This should be done every time GNU Octave is opened):
-
-
-.. code:: octave
-    
-    >> pkg load signal
-
-
-If GNU Octave Signal Package is not already installed, it should be first installed from Octave Forge (octave.sourceforge.io), and then get loaded by using the following commands in a command window:
-
-.. code:: octave
-
-    >> pkg install -forge signal
-    >> pkg load signal
-
-
 Required Package for Python
 ---------------------------
 
@@ -131,15 +135,6 @@ Following packages are required:
 * Matplotlib (https://matplotlib.org)
 
 
-Quick Start (MATLAB)
---------------------
-
-* Open MATLAB or GNU Octave
-* Change a current folder (current directory) to a folder that contains OCEANLYZ toolbox, for example “C:\\oceanlyz”, in MATLAB or GNU Octave.
-* Open a file named “oceanlyzinput.m” in MATLAB or GNU Octave editor and modify it based on the properties of the collected dataset and required analysis.
-* Run a file named “RunOceanlyz.m” in MATLAB or GNU Octave to start calculations.
-
-
 Quick Start (Python)
 --------------------
 
@@ -147,6 +142,21 @@ Quick Start (Python)
 * Import OCEANLYZ package by using "import oceanlyz" 
 * Create OCEANLYZ object such as “ocn=oceanlyz.oceanlyz()” in Python and set/modify its properties based on the dataset and required analysis.
 * Run a method as “ocn.runoceanlyz()” in Python to start calculations.
+
+
+Operating System
+----------------
+
+OCEANLYZ code can be run on Microsoft Windows, Mac, and Linux. However, make sure any given path is compatible with a running operating system. In particular, “\\” is used in Windows path, while “/” is used in Mac or Linux path. For example, if a path is “C:\\” on Windows machine, it would be “C:/” on Mac or Linux.
+
+OCEANLYZ GUI can be run on Microsoft Windows (64-bit) machine.
+
+
+Required Programming Language
+-----------------------------
+
+OCEANLYZ toolbox can be run by using MATLAB (https://www.mathworks.com), GNU Octave (https://www.gnu.org/software/octave), or Python (https://www.python.org). 
+
 
 
 Recommended Books
@@ -201,7 +211,7 @@ Recommended Application
 Citation
 --------
 
-Cite this toolbox as:
+Cite OCEANLYZ as:
 
 Karimpour, A., & Chen, Q. (2017). Wind Wave Analysis in Depth Limited Water Using OCEANLYZ, a MATLAB toolbox. Computers & Geosciences.
 
