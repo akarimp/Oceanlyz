@@ -5,23 +5,24 @@ OCEANLYZ
 
 OCEANLYZ, Ocean Wave Analyzing Toolbox, is a toolbox for analyzing the wave time series data collected by sensors in open body of water such as ocean, sea, and lake or in a laboratory.
 
-This toolbox contains functions that each one is suitable for a particular purpose. Both spectral and zero-crossing methods are offered for wave analysis. This toolbox can calculate wave properties such as zero-moment wave height, significant wave height, mean wave height, peak wave period and mean period. This toolbox can correct and account for the pressure attention (pressure loss) in the water column for data collected by a pressure sensor. This toolbox can separate wind sea and swell energies and reports their properties.
+OCEANLYZ GUI is a graphical user interface for the OCEANLYZ toolbox.
+
+This toolbox provides spectral and zero-crossing wave analysis. It can calculate wave properties such as zero-moment wave height, significant wave height, mean wave height, peak wave period and mean period. This toolbox can correct and account for the pressure attention (pressure loss) in the water column for data collected by a pressure sensor. This toolbox can separate wind sea and swell energies and reports their properties.
 
 :Name: OCEANLYZ
 :Description: Ocean Wave Analyzing Toolbox
-:Version: 2.0
-:Requirements: MATLAB or GNU Octave | Python (3 or later) | GUI Version (stand-alone)
+:Version: 2.0 (GUI 1.2)
+:Requirements: MATLAB or GNU Octave | Python (3 or later) | GUI Version (Microsoft Windows 10 (64-bit))
 :Developer: Arash Karimpour (http://www.arashkarimpour.com)
 :Documentation: https://oceanlyz.readthedocs.io
 :Tutorial Video: `YouTube Playlist <https://www.youtube.com/playlist?list=PLcrFHi9M_GZRTCshcgujlK7y5ZPim6afM>`_
-:Source Code: https://github.com/akarimp/oceanlyz
+:Source Code: https://github.com/akarimp/Oceanlyz
 :Report Issues: https://github.com/akarimp/Oceanlyz/issues
 
+Installing (GUI Version)
+------------------------
 
-Installation (GUI Version)
---------------------------
-
-To use stand-alone GUI version of OCEANLYZ (Windows):
+To use stand-alone GUI version of OCEANLYZ (Microsoft Windows (64-bit)):
 
 * Download OCEANLYZ GUI setup file:
 
@@ -31,24 +32,24 @@ To use stand-alone GUI version of OCEANLYZ (Windows):
 * Start OCEANLYZ GUI
 * For documentation, use Help menu in OCEANLYZ GUI
 
-Installation (MATLAB Version)
------------------------------
+Installing (MATLAB Version)
+---------------------------
 
 To use MATLAB version of OCEANLYZ toolbox:
 
 * Install MATLAB or GNU Octave
 * Download OCEANLYZ:
 
-    * Version 2.0 (GitHub): https://github.com/akarimp/oceanlyz/releases/download/2.0/oceanlyz_2_0.zip
+    * Version 2.0 (GitHub): https://github.com/akarimp/Oceanlyz/releases/download/2.0/oceanlyz_2_0.zip
     * Version 1.5 (CNET): https://download.cnet.com/Oceanlyz/3000-2054_4-75833686.html
-    * Version 1.5 (GitHub): https://github.com/akarimp/oceanlyz/releases/download/1.5/oceanlyz_1_5.zip
-    * Version 1.4 (GitHub): https://github.com/akarimp/oceanlyz/releases/download/1.5/oceanlyz_1_4.zip
+    * Version 1.5 (GitHub): https://github.com/akarimp/Oceanlyz/releases/download/1.5/oceanlyz_1_5.zip
+    * Version 1.4 (GitHub): https://github.com/akarimp/Oceanlyz/releases/download/1.5/oceanlyz_1_4.zip
 
 * Unzip OCEANLYZ in any location you choose such as “C:\\”
 
 
-Installation (Python Version)
------------------------------
+Installing (Python Version)
+---------------------------
 
 To use Python version of OCEANLYZ toolbox:
 
@@ -148,20 +149,48 @@ Quick Start (Python Version)
 * Run a method as “ocn.runoceanlyz()” in Python to start calculations.
 
 
-Recommended Book
-----------------
+Recommended Books
+-----------------
 
-* | **Ocean Wave Data Analysis**
-  | Introduction to Time Series Analysis, Signal Processing, and Wave Prediction.
-  | Order at Amazon: https://www.amazon.com/dp/0692109978
-  |
-* | **Principles of Data Science with Python**
-  | Introduction to Scientific Computing, Data Analysis, and Data Visualization.
-  | Order at Amazon: https://www.amazon.com/dp/1735241008
-  |
-* | **Fundamentals of Data Science with MATLAB**
-  | Introduction to Scientific Computing, Data Analysis, and Data Visualization.
-  | Order at Amazon: https://www.amazon.com/dp/1735241016
+.. list-table::
+   :header-rows: 1
+   :align: center
+
+   * - .. figure:: figures/Figure_Book_Coastal.jpg
+     - .. figure:: figures/Figure_Book_Python.jpg
+     - .. figure:: figures/Figure_Book_Matlab.jpg
+
+   * - | **Ocean Wave Data Analysis**
+       | Introduction to Time Series Analysis, Signal Processing, and Wave Prediction.
+       |
+       | Order at Amazon: https://www.amazon.com/dp/0692109978
+       | Read Online at: https://github.com/akarimp/Ocean-Wave-Data-Analysis
+     - | **Fundamentals of Data Science with MATLAB**
+       | Introduction to Scientific Computing, Data Analysis, and Data Visualization.
+       |
+       | Order at Amazon: https://www.amazon.com/dp/1735241016
+       | Read Online at: https://github.com/akarimp/Fundamentals-of-Data-Science-with-MATLAB
+     - | **Principles of Data Science with Python**
+       | Introduction to Scientific Computing, Data Analysis, and Data Visualization.
+       |
+       | Order at Amazon: https://www.amazon.com/dp/1735241008
+       | Read Online at: https://github.com/akarimp/Principles-of-Data-Science-with-Python
+
+
+Recommended Application
+-----------------------
+
+.. list-table::
+   :header-rows: 1
+   :align: center
+
+   * - .. figure:: figures/Figure_AsanPlot_Screenshot.jpg
+
+   * - | **AsanPlot**
+       | Data cleaning and plotting software.
+       |
+       | Download: https://github.com/akarimp/AsanPlot
+
 
 Citation
 --------
@@ -172,12 +201,13 @@ Karimpour, A., & Chen, Q. (2017). Wind Wave Analysis in Depth Limited Water Usin
 
 Link: https://www.sciencedirect.com/science/article/pii/S0098300417306489
 
+
 License Agreement and Disclaimer
 --------------------------------
 
 OCEANLYZ: Ocean Wave Analyzing Toolbox
 
-Copyright (c) 2022 Arash Karimpour
+Copyright (c) 2023 Arash Karimpour
 
 All rights reserved
 
