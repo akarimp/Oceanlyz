@@ -29,9 +29,9 @@ To use stand-alone GUI version of OCEANLYZ (Microsoft Windows (64-bit)):
 
 * Download OCEANLYZ GUI setup file:
 
-    * Version 1.1 (GitHub): https://github.com/akarimp/Oceanlyz-GUI/releases/download/1.1/oceanlyz_gui_1.1_win_x64_setup.exe
+    * Version 1.2 (GitHub): https://github.com/akarimp/Oceanlyz/releases/download/2.0/oceanlyz_gui_1.2_win_x64_setup.exe
 
-* Run and follow setup file to install OCEANLYZ GUI
+* Run setup file and follow setup wizard to install OCEANLYZ GUI
 * Start OCEANLYZ GUI
 * For documentation, use Help menu in OCEANLYZ GUI
 
