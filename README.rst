@@ -44,6 +44,10 @@ Installing (MATLAB)
 To use MATLAB version of OCEANLYZ toolbox:
 
 * Install MATLAB or GNU Octave
+
+    * MATLAB: https://www.mathworks.com
+    * GNU Octave: https://octave.org
+
 * Download OCEANLYZ:
 
     * Version 2.0 (GitHub): https://github.com/akarimp/Oceanlyz/releases/download/2.0/oceanlyz_2_0.zip
@@ -72,11 +76,11 @@ GNU Octave Signal Package can be loaded inside GNU Octave by using a following c
     >> pkg load signal
 
 
-If GNU Octave Signal Package is not already installed, it should be first installed from Octave Forge (octave.sourceforge.io), and then get loaded by using the following commands in a command window:
+If GNU Octave Signal Package is not already installed, it should be first installed from https://packages.octave.org, and then get loaded by using the following commands in a command window:
 
 .. code:: octave
 
-    >> pkg install -forge signal
+    >> pkg install "https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/signal-1.4.5.tar.gz"
     >> pkg load signal
 
 Quick Start (MATLAB)
@@ -158,7 +162,7 @@ OCEANLYZ GUI can be run on Microsoft Windows (64-bit) machine.
 Required Programming Language
 -----------------------------
 
-OCEANLYZ toolbox can be run by using MATLAB (https://www.mathworks.com), GNU Octave (https://www.gnu.org/software/octave), or Python (https://www.python.org). 
+OCEANLYZ toolbox can be run by using MATLAB (https://www.mathworks.com), GNU Octave (https://octave.org), or Python (https://www.python.org). 
 
 
 Recommended Books
