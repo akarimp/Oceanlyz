@@ -1,11 +1,12 @@
 cff-version: 2.0
 message: "Please cite OCEANLYZ as below."
 authors:
-  - family-names: Arash
-    given-names: Karimpour
-  - family-names: Qin
-    given-names: Chen
-title: "Wind wave analysis in depth limited water using OCEANLYZ, A MATLAB toolbox"
+- family-names: "Karimpour"
+  given-names: "Arash"
+- family-names: "Chen"
+  given-names: "Qin"
+title: ""Wind wave analysis in depth limited water using OCEANLYZ, A MATLAB toolbox"
 version: 2.0
 doi: 10.1016/j.cageo.2017.06.010
 date-released: 2017
+url: "https://www.sciencedirect.com/science/article/abs/pii/S0098300417306489"
