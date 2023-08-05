@@ -62,7 +62,6 @@ Required Package for MATLAB
 
 MATLAB users need to install MATLAB Signal Processing Toolbox for running the Oceanlyz spectral analysis. It gives Oceanlyz access to MATLAB Welch's power spectral density calculation. However, MATLAB Signal Processing Toolbox it is not required for zero-crossing analysis. 
 
-
 Required Package for GNU Octave
 -------------------------------
 
@@ -90,7 +89,6 @@ Quick Start (MATLAB)
 * Change a current folder (current directory) to a folder that contains OCEANLYZ toolbox, for example “C:\\oceanlyz”, in MATLAB or GNU Octave.
 * Open a file named “oceanlyzinput.m” in MATLAB or GNU Octave editor and modify it based on the properties of the collected dataset and required analysis.
 * Run a file named “RunOceanlyz.m” in MATLAB or GNU Octave to start calculations.
-
 
 Python Version
 ==============
@@ -128,7 +126,6 @@ To install OCEANLYZ via Anaconda cloud (https://anaconda.org/akarimp/oceanlyz):
 
     conda install -c akarimp oceanlyz
 
-
 Required Package for Python
 ---------------------------
 
@@ -138,7 +135,6 @@ Following packages are required:
 * SciPy (https://www.scipy.org)
 * Matplotlib (https://matplotlib.org)
 
-
 Quick Start (Python)
 --------------------
 
@@ -146,7 +142,6 @@ Quick Start (Python)
 * Import OCEANLYZ package by using "import oceanlyz" 
 * Create OCEANLYZ object such as “ocn=oceanlyz.oceanlyz()” in Python and set/modify its properties based on the dataset and required analysis.
 * Run a method as “ocn.runoceanlyz()” in Python to start calculations.
-
 
 About
 =====
@@ -158,12 +153,19 @@ OCEANLYZ code can be run on Microsoft Windows, Mac, and Linux. However, make sur
 
 OCEANLYZ GUI can be run on Microsoft Windows (64-bit) machine.
 
-
 Required Programming Language
 -----------------------------
 
 OCEANLYZ toolbox can be run by using MATLAB (https://www.mathworks.com), GNU Octave (https://octave.org), or Python (https://www.python.org). 
 
+Citation
+--------
+
+Cite OCEANLYZ as:
+
+Karimpour, A., & Chen, Q. (2017). Wind Wave Analysis in Depth Limited Water Using OCEANLYZ, a MATLAB toolbox. Computers & Geosciences.
+
+Link: https://www.sciencedirect.com/science/article/pii/S0098300417306489
 
 Recommended Books
 -----------------
@@ -195,7 +197,6 @@ Recommended Books
        |
        | Read Online: https://github.com/akarimp/Principles-of-Data-Science-with-Python
 
-
 Recommended Application
 -----------------------
 
@@ -212,17 +213,6 @@ Recommended Application
        | Data cleaning and plotting software.
        |
        | Download: https://github.com/akarimp/AsanPlot
-
-
-Citation
---------
-
-Cite OCEANLYZ as:
-
-Karimpour, A., & Chen, Q. (2017). Wind Wave Analysis in Depth Limited Water Using OCEANLYZ, a MATLAB toolbox. Computers & Geosciences.
-
-Link: https://www.sciencedirect.com/science/article/pii/S0098300417306489
-
 
 License Agreement and Disclaimer
 --------------------------------
