@@ -5,8 +5,23 @@ authors:
   given-names: "Arash"
 - family-names: "Chen"
   given-names: "Qin"
-title: ""Wind wave analysis in depth limited water using OCEANLYZ, A MATLAB toolbox"
+title: "Wind wave analysis in depth limited water using OCEANLYZ, A MATLAB toolbox"
 version: 2.0
 doi: 10.1016/j.cageo.2017.06.010
 date-released: 2017
 url: "https://www.sciencedirect.com/science/article/abs/pii/S0098300417306489"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Karimpour"
+    given-names: "Arash"
+  - family-names: "Chen"
+    given-names: "Qin"
+  doi: "10.1016/j.cageo.2017.06.010"
+  journal: "Computers & Geosciences"
+  month: 9
+  start: 181 # First page number
+  end: 189 # Last page number
+  title: "Wind wave analysis in depth limited water using OCEANLYZ, A MATLAB toolbox"
+  volume: 106
+  year: 2017
