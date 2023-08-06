@@ -121,20 +121,27 @@ Recommended Books
        | Read Online: https://github.com/akarimp/Principles-of-Data-Science-with-Python
 
 
-Recommended Application
------------------------
+Recommended Applications
+------------------------
 
 .. list-table::
    :header-rows: 1
    :align: center
 
-   * - .. figure:: figures/Figure_AsanPlot_Screenshot.jpg
-            :width: 1777 px
-            :height: 1002 px
-            :scale: 20 %
+   * - .. figure:: figures/Figure_Oceanlyz_Logo.png
+     - .. figure:: figures/Figure_ScientiMate_Logo.png
+     - .. figure:: figures/Figure_AsanPlot_Screenshot.jpg
 
-   * - | **AsanPlot**
-       | Data cleaning and plotting software.
+   * - | **OCEANLYZ**
+       | Ocean Wave Analyzing Toolbox
+       |
+       | Download: https://github.com/akarimp/Oceanlyz
+     - | **ScientiMate**
+       | Coastal and Ocean Data Analysis Library
+       |
+       | Download: https://github.com/akarimp/ScientiMate
+     - | **AsanPlot**
+       | Data cleaning and plotting software
        |
        | Download: https://github.com/akarimp/AsanPlot
 
