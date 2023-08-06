@@ -209,8 +209,8 @@ Recommended Application
    :header-rows: 1
    :align: center
 
-   * - .. figure:: figures/Figure_Oceanlyz_Logo.jpg
-     - .. figure:: figures/Figure_ScientiMate_Logo.jpg
+   * - .. figure:: figures/Figure_Oceanlyz_Logo.png
+     - .. figure:: figures/Figure_ScientiMate_Logo.png
      - .. figure:: figures/Figure_AsanPlot_Screenshot.jpg
             :width: 1777 px
             :height: 1002 px
