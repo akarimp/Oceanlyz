@@ -57,23 +57,28 @@ The MATLAB version of this toolbox can be run by using MATLAB (https://www.mathw
 Required Package for MATLAB
 ---------------------------
 
-MATLAB users need to install MATLAB Signal Processing Toolbox (https://www.mathworks.com/products/signal.html) for running the OCEANLYZ spectral analysis. It gives OCEANLYZ access to MATLAB Welch's power spectral density calculation. However, MATLAB Signal Processing Toolbox it is not required for zero-crossing analysis. 
+MATLAB users need to install MATLAB Signal Processing Toolbox (https://www.mathworks.com/products/signal.html) for running the OCEANLYZ spectral analysis. It gives OCEANLYZ access to MATLAB Welch's power spectral density calculation. However, MATLAB Signal Processing Toolbox is not required for zero-crossing analysis. 
 
 
 Required Package for GNU Octave
 -------------------------------
 
-GNU Octave users need to install/load GNU Octave Signal package (https://gnu-octave.github.io/packages/signal) for running the OCEANLYZ spectral analysis. It gives OCEANLYZ access to GNU Octave Welch's power spectral density calculation. However, GNU Octave Signal package it is not required for zero-crossing analysis.
+GNU Octave users need to install/load GNU Octave Signal package (https://gnu-octave.github.io/packages/signal) for running the OCEANLYZ spectral analysis.
+It gives OCEANLYZ access to GNU Octave Welch's power spectral density calculation. However, GNU Octave Signal package is not required for zero-crossing analysis.
+The list of installed packages can be found by using a following command in a command window:
+
+.. code:: octave
+    
+    >> pkg list
 
 GNU Octave comes with Signal package but it needs to loaded every time GNU Octave starts. The Signal package can be loaded inside GNU Octave by using a following command in a command window (This should be done every time GNU Octave is opened):
-
 
 .. code:: octave
     
     >> pkg load signal
 
 
-If GNU Octave Signal Package is not already installed, it should be first installed from Octave Forge https://packages.octave.org, and then get loaded by using the following commands in a command window:
+If GNU Octave Signal Package is not already installed, it should be first installed from https://packages.octave.org, and then get loaded by using the following commands in the command window:
 
 .. code:: octave
 
