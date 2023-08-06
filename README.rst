@@ -202,8 +202,8 @@ Recommended Books
        |
        | Read Online: https://github.com/akarimp/Principles-of-Data-Science-with-Python
 
-Recommended Application
------------------------
+Recommended Applications
+------------------------
 
 .. list-table::
    :header-rows: 1
