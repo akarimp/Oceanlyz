@@ -60,22 +60,27 @@ To use MATLAB version of OCEANLYZ toolbox:
 Required Package for MATLAB
 ---------------------------
 
-MATLAB users need to install MATLAB Signal Processing Toolbox for running the Oceanlyz spectral analysis. It gives Oceanlyz access to MATLAB Welch's power spectral density calculation. However, MATLAB Signal Processing Toolbox it is not required for zero-crossing analysis. 
+MATLAB users need to install MATLAB Signal Processing Toolbox (https://www.mathworks.com/products/signal.html) for running the OCEANLYZ spectral analysis. It gives OCEANLYZ access to MATLAB Welch's power spectral density calculation. However, MATLAB Signal Processing Toolbox is not required for zero-crossing analysis. 
 
 Required Package for GNU Octave
 -------------------------------
 
-GNU Octave users need to install/load GNU Octave Signal Package for running the Oceanlyz spectral analysis. It gives Oceanlyz access to GNU Octave Welch's power spectral density calculation. However, GNU Octave Signal Package it is not required for zero-crossing analysis.
+GNU Octave users need to install/load GNU Octave Signal package (https://gnu-octave.github.io/packages/signal) for running the OCEANLYZ spectral analysis.
+It gives OCEANLYZ access to GNU Octave Welch's power spectral density calculation. However, GNU Octave Signal package is not required for zero-crossing analysis.
+The list of installed packages can be found by using a following command in a command window:
 
-GNU Octave Signal Package can be loaded inside GNU Octave by using a following command in a command window (This should be done every time GNU Octave is opened):
+.. code:: octave
+    
+    >> pkg list
 
+GNU Octave comes with Signal package but it needs to loaded every time GNU Octave starts. The Signal package can be loaded inside GNU Octave by using a following command in a command window (This should be done every time GNU Octave is opened):
 
 .. code:: octave
     
     >> pkg load signal
 
 
-If GNU Octave Signal Package is not already installed, it should be first installed from https://packages.octave.org, and then get loaded by using the following commands in a command window:
+If GNU Octave Signal Package is not already installed, it should be first installed from https://packages.octave.org, and then get loaded by using the following commands in the command window:
 
 .. code:: octave
 
@@ -204,13 +209,23 @@ Recommended Application
    :header-rows: 1
    :align: center
 
-   * - .. figure:: figures/Figure_AsanPlot_Screenshot.jpg
+   * - .. figure:: figures/Figure_Oceanlyz_Logo.jpg
+     - .. figure:: figures/Figure_ScientiMate_Logo.jpg
+     - .. figure:: figures/Figure_AsanPlot_Screenshot.jpg
             :width: 1777 px
             :height: 1002 px
             :scale: 20 %
 
-   * - | **AsanPlot**
-       | Data cleaning and plotting software.
+   * - | **OCEANLYZ**
+       | Ocean Wave Analyzing Toolbox
+       |
+       | Download: https://github.com/akarimp/Oceanlyz
+     - | **ScientiMate**
+       | Coastal and Ocean Data Analysis Library
+       |
+       | Download: https://github.com/akarimp/ScientiMate
+     - | **AsanPlot**
+       | Data cleaning and plotting software
        |
        | Download: https://github.com/akarimp/AsanPlot
 
