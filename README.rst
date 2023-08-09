@@ -56,6 +56,19 @@ To use MATLAB version of OCEANLYZ toolbox:
     * Version 1.4 (GitHub): https://github.com/akarimp/Oceanlyz/releases/download/1.5/oceanlyz_1_4.zip
 
 * Unzip OCEANLYZ in any location you choose such as “C:\\”
+* Add OCEANLYZ folder to MATLAB or GNU Octave path
+
+Add OCEANLYZ folder to MATLAB or GNU Octave path
+------------------------------------------------
+
+For example, if OCEANLYZ files are in "C:\\OCEANLYZ" folder, then:
+
+To add OCEANLYZ to MATLAB or GNU Octave path, run following commands in the Command Window:
+
+.. code:: MATLAB
+
+    OceanlyzPath = genpath('C:\oceanlyz'); %Generating path for OCEANLYZ folder and its sub-folders
+    addpath(OceanlyzPath); %Add OCEANLYZ folder to path
 
 Required Package for MATLAB
 ---------------------------
@@ -67,20 +80,20 @@ Required Package for GNU Octave
 
 GNU Octave users need to install/load GNU Octave Signal package (https://gnu-octave.github.io/packages/signal) for running the OCEANLYZ spectral analysis.
 It gives OCEANLYZ access to GNU Octave Welch's power spectral density calculation. However, GNU Octave Signal package is not required for zero-crossing analysis.
-The list of installed packages can be found by using a following command in a command window:
+The list of installed packages can be found by running the following command in the Command Window:
 
 .. code:: octave
     
     >> pkg list
 
-GNU Octave comes with Signal package but it needs to loaded every time GNU Octave starts. The Signal package can be loaded inside GNU Octave by using a following command in a command window (This should be done every time GNU Octave is opened):
+GNU Octave comes with Signal package but it needs to loaded every time GNU Octave starts. The Signal package can be loaded inside GNU Octave by running the following command in the Command Window (This should be done every time GNU Octave is opened):
 
 .. code:: octave
     
     >> pkg load signal
 
 
-If GNU Octave Signal Package is not already installed, it should be first installed from https://packages.octave.org, and then get loaded by using the following commands in the command window:
+If GNU Octave Signal Package is not already installed, it should be first installed from https://packages.octave.org, and then get loaded by running the following commands in the Command Window:
 
 .. code:: octave
 
@@ -111,21 +124,21 @@ To use Python version of OCEANLYZ toolbox:
 First, we need to install Python programming language.
 
 * Method 1:
-    Install pure Python from https://www.python.org and then use the **pip** command to install required packages
+    Install Python from https://www.python.org and then use the **pip** command to install required packages
 * Method 2 (Recommended):
     Install Anaconda Python distribution from https://www.anaconda.com and then use the **conda** command to install required packages
 
 **2) Install OCEANLYZ**
 
-After Python is installed, we need to install OCEANLYZ package.
+After Python is installed, you need to install OCEANLYZ package.
 
-To install OCEANLYZ via pip (https://pypi.org/project/oceanlyz):
+If you installed Python, then you need to install OCEANLYZ via pip (https://pypi.org/project/oceanlyz). To do that, open the Command Prompt (or Terminal) and run:
 
 .. code:: python
 
     pip install oceanlyz
 
-To install OCEANLYZ via Anaconda cloud (https://anaconda.org/akarimp/oceanlyz):
+If you installed Anaconda Python distribution, then you need to install OCEANLYZ via Anaconda cloud (https://anaconda.org/akarimp/oceanlyz). To do that, open the Command Prompt (or Terminal) and run:
 
 .. code:: python
 
