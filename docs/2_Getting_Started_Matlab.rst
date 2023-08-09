@@ -22,18 +22,26 @@ To use MATLAB version of OCEANLYZ toolbox:
     * Version 1.4 (GitHub): https://github.com/akarimp/Oceanlyz/releases/download/1.5/oceanlyz_1_4.zip
 
 * Unzip OCEANLYZ in any location you choose such as "C:\\"
+* Add OCEANLYZ folder to MATLAB or GNU Octave path
 
-One way to access OCEANLYZ is to copy OCEANLYZ files and its sub-folders in your desire working directory and then use it there.
-Another option is to add OCEANLYZ folder to MATLAB path. By doing that, you always have access to OCEANLYZ from any working directory.
-You need to do this only once.
-For example, if OCEANLYZ files are in "C:\\oceanlyz" folder then it can be added to path as:
+
+Add OCEANLYZ folder to MATLAB or GNU Octave path
+------------------------------------------------
+
+You may access OCEANLYZ by copying OCEANLYZ files and its sub-folders to your desire working directory and then use them there.
+However, a better option is to add OCEANLYZ folder to MATLAB or GNU Octave path. By doing that, you always have access to OCEANLYZ from any working directory.
+Remember, you need to add OCEANLYZ to path only once.
+
+For example, if OCEANLYZ files are in "C:\\OCEANLYZ" folder, then:
+
+To add OCEANLYZ to MATLAB or GNU Octave path, run following commands in the Command Window:
 
 .. code:: MATLAB
 
     OceanlyzPath = genpath('C:\oceanlyz'); %Generating path for OCEANLYZ folder and its sub-folders
     addpath(OceanlyzPath); %Add OCEANLYZ folder to path
 
-To remove OCEANLYZ from the path use:
+To remove OCEANLYZ from MATLAB or GNU Octave path, run following commands in the Command Window:
 
 .. code:: MATLAB
 
@@ -65,20 +73,19 @@ Required Package for GNU Octave
 
 GNU Octave users need to install/load GNU Octave Signal package (https://gnu-octave.github.io/packages/signal) for running the OCEANLYZ spectral analysis.
 It gives OCEANLYZ access to GNU Octave Welch's power spectral density calculation. However, GNU Octave Signal package is not required for zero-crossing analysis.
-The list of installed packages can be found by using a following command in a command window:
+The list of installed packages can be found by running the following command in the Command Window:
 
 .. code:: octave
     
     >> pkg list
 
-GNU Octave comes with Signal package but it needs to loaded every time GNU Octave starts. The Signal package can be loaded inside GNU Octave by using a following command in a command window (This should be done every time GNU Octave is opened):
+GNU Octave comes with Signal package but it needs to loaded every time GNU Octave starts. The Signal package can be loaded inside GNU Octave by running the following command in the Command Window (This should be done every time GNU Octave is opened):
 
 .. code:: octave
     
     >> pkg load signal
 
-
-If GNU Octave Signal Package is not already installed, it should be first installed from https://packages.octave.org, and then get loaded by using the following commands in the command window:
+If GNU Octave Signal Package is not already installed, it should be first installed from https://packages.octave.org, and then get loaded by running the following commands in the Command Window:
 
 .. code:: octave
 

@@ -17,7 +17,7 @@ To use Python version of OCEANLYZ toolbox:
 First, you need to install Python programming language.
 
 * Method 1:
-    Install pure Python from https://www.python.org and then use the **pip** command to install required packages
+    Install Python from https://www.python.org and then use the **pip** command to install required packages
 * Method 2 (Recommended):
     Install Anaconda Python distribution from https://www.anaconda.com and then use the **conda** command to install required packages
 
@@ -25,13 +25,13 @@ First, you need to install Python programming language.
 
 After Python is installed, you need to install OCEANLYZ package.
 
-To install OCEANLYZ via pip (https://pypi.org/project/oceanlyz) if you use pure Python:
+If you installed Python, then you need to install OCEANLYZ via pip (https://pypi.org/project/oceanlyz). To do that, open the Command Prompt (or Terminal) and run:
 
 .. code:: python
 
     pip install oceanlyz
 
-To install OCEANLYZ via Anaconda cloud (https://anaconda.org/akarimp/oceanlyz) if you use Anaconda Python distribution:
+If you installed Anaconda Python distribution, then you need to install OCEANLYZ via Anaconda cloud (https://anaconda.org/akarimp/oceanlyz). To do that, open the Command Prompt (or Terminal) and run:
 
 .. code:: python
 
