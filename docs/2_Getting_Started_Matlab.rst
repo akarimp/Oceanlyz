@@ -73,7 +73,7 @@ Required Package for GNU Octave
 
 GNU Octave users need to install/load GNU Octave Signal package (https://gnu-octave.github.io/packages/signal) for running the OCEANLYZ spectral analysis.
 It gives OCEANLYZ access to GNU Octave Welch's power spectral density calculation. However, GNU Octave Signal package is not required for zero-crossing analysis.
-The list of the GNU Octave's installed packages can be found by running the following command in the Command Window:
+To find the list of the GNU Octave's pre-installed packages, run the following command in the Command Window:
 
 .. code:: octave
     
