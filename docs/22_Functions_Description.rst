@@ -12,20 +12,20 @@ If a pressure sensor is used for data collection, then data should be corrected 
 
 The main class to Run OCEANLYZ toolbox is:
 
-===================   =======================================================================
-Class                 Description
-===================   =======================================================================
-oceanlyz              Calculate wave properties from water level or water pressure data (This the main class that runs OCEANLYZ)
-===================   =======================================================================
+=======================   =======================================================================
+Class                     Description
+=======================   =======================================================================
+``oceanlyz``              Calculate wave properties from water level or water pressure data (This the main class that runs OCEANLYZ)
+=======================   =======================================================================
 
 The functions that are used in OCEANLYZ toolbox are:
 
-===================   =======================================================================
-Function              Description
-===================   =======================================================================
-PcorFFTFun            Corrects water depth data for pressure attenuation effect using spectral analysis
-PcorZerocrossingFun   Corrects water depth data for pressure attenuation effect using zero-crossing
-SeaSwellFun           Partition (separate) wind sea from swell in a power spectral density using an one dimensional method
-WaveSpectraFun        Calculates wave properties from water surface elevation using spectral analysis
-WaveZerocrossingFun   Calculates wave properties from water surface elevation using zero-crossing
-===================   =======================================================================
+=======================   =======================================================================
+Function                  Description
+=======================   =======================================================================
+``PcorFFTFun``            Corrects water depth data for pressure attenuation effect using spectral analysis
+``PcorZerocrossingFun``   Corrects water depth data for pressure attenuation effect using zero-crossing
+``SeaSwellFun``           Partition (separate) wind sea from swell in a power spectral density using an one dimensional method
+``WaveSpectraFun``        Calculates wave properties from water surface elevation using spectral analysis
+``WaveZerocrossingFun``   Calculates wave properties from water surface elevation using zero-crossing
+=======================   =======================================================================
