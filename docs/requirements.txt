@@ -7,4 +7,3 @@
 
 # sphinx_book_theme==1.0.1
 sphinx-book-theme
-furo
