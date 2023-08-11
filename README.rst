@@ -13,7 +13,7 @@ This toolbox provides spectral and zero-crossing wave analysis. It can calculate
 :Description: Ocean Wave Analyzing Toolbox
 :Version: 2.0 (GUI 1.2)
 :Requirements: MATLAB or GNU Octave | Python (3 or later) | GUI Version (Microsoft Windows 10 (64-bit))
-:Developer: Arash Karimpour | http://www.arashkarimpour.com
+:Developer: Arash Karimpour | https://www.arashkarimpour.com
 :Documentation: https://oceanlyz.readthedocs.io
 :Tutorial Video: `YouTube Playlist <https://www.youtube.com/playlist?list=PLcrFHi9M_GZRTCshcgujlK7y5ZPim6afM>`_
 :Source Code: https://github.com/akarimp/Oceanlyz
