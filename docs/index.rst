@@ -18,11 +18,11 @@ This toolbox provides spectral and zero-crossing wave analysis. It can calculate
 :Description: Ocean Wave Analyzing Toolbox
 :Version: 2.0 (GUI 1.2)
 :Requirements: MATLAB or GNU Octave | Python (3 or later) | GUI Version (Microsoft Windows 10 (64-bit))
-:Developer: Arash Karimpour (http://www.arashkarimpour.com)
+:Developer: Arash Karimpour | https://www.arashkarimpour.com
 :Documentation: https://oceanlyz.readthedocs.io
 :Tutorial Video: `YouTube Playlist <https://www.youtube.com/playlist?list=PLcrFHi9M_GZRTCshcgujlK7y5ZPim6afM>`_
 :Source Code: https://github.com/akarimp/Oceanlyz
-:Report Issues: https://github.com/akarimp/Oceanlyz/issues
+:Help / Report Issues: arkarimp@gmail.com
 
 User Guide
 ----------
@@ -86,8 +86,9 @@ User Guide
 .. toctree::
     :maxdepth: 1
 
-    20_Correct_Pressure_Data.rst
-    21_Replace_Spectrum_Tail.rst
+    20_Steps_to_Analyze_Wave_Data.rst
+    21_Correct_Pressure_Data.rst
+    22_Replace_Spectrum_Tail.rst
 
 
 Recommended Books
@@ -121,20 +122,27 @@ Recommended Books
        | Read Online: https://github.com/akarimp/Principles-of-Data-Science-with-Python
 
 
-Recommended Application
------------------------
+Recommended Applications
+------------------------
 
 .. list-table::
    :header-rows: 1
    :align: center
 
-   * - .. figure:: figures/Figure_AsanPlot_Screenshot.jpg
-            :width: 1777 px
-            :height: 1002 px
-            :scale: 20 %
+   * - .. figure:: figures/Figure_Oceanlyz_Logo.png
+     - .. figure:: figures/Figure_ScientiMate_Logo.png
+     - .. figure:: figures/Figure_AsanPlot_Screenshot.jpg
 
-   * - | **AsanPlot**
-       | Data cleaning and plotting software.
+   * - | **OCEANLYZ**
+       | Ocean Wave Analyzing Toolbox
+       |
+       | Download: https://github.com/akarimp/Oceanlyz
+     - | **ScientiMate**
+       | Coastal and Ocean Data Analysis Library
+       |
+       | Download: https://github.com/akarimp/ScientiMate
+     - | **AsanPlot**
+       | Data cleaning and plotting software
        |
        | Download: https://github.com/akarimp/AsanPlot
 
