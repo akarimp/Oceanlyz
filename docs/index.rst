@@ -22,7 +22,8 @@ This toolbox provides spectral and zero-crossing wave analysis. It can calculate
 :Documentation: https://oceanlyz.readthedocs.io
 :Tutorial Video: `YouTube Playlist <https://www.youtube.com/playlist?list=PLcrFHi9M_GZRTCshcgujlK7y5ZPim6afM>`_
 :Source Code: https://github.com/akarimp/Oceanlyz
-:Help / Report Issues: arkarimp@gmail.com
+:Report Issues: arkarimp@gmail.com
+:Help / Consultation: arkarimp@gmail.com
 
 User Guide
 ----------
